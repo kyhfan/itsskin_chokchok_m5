@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>It's skin</title>
+    <link type="image/icon" rel="shortcut icon" href="http://routine.itsskin.com/images/hydra_favi.ico" />
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="../js/jquery-1.11.2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+    <script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
+    <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <script src="../js/m_main.js"></script>
+
+
+</head>
+<body>
+<div class="page-wrap">
+    <div id="header">
+        <div class="inner">
+            <div class="wrapper">
+                <h1 class="logo">
+                    <a href="index.html">
+                        <img src="./images/logo.png" alt="it's skin">
+                    </a>
+                </h1>
+                <a href="javascript:void(0)" class="gnb menu-trigger">
+                    <span class="line-wrap">
+                        <span class="line top"></span>
+                        <span class="line middle"></span>
+                        <span class="line bottom"></span>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="menu-layer">
+            <a href="javascript:void(0);" class="close menu-trigger">
+                <span class="line left"></span>
+                <span class="line right"></span>
+            </a>
+            <ul class="list">
+                <li class="is-active"><a href="#">It's My 세럼</a></li>
+                <li><a href="#">빈칸 이벤트</a></li>
+                <li><a href="#">QUIZ SHOW</a></li>
+                <li><a href="#">나만의 루틴 확인</a></li>
+                <li><a href="#">지난 이벤트</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content main">
+        <!--<a href="javascript:void(0)" data-popup-target="#popup-share"></a>-->
+        <section class="main-visual">
+            <div class="serum">
+                <img src="./images/section_main_serum.png" alt="">
+            </div>
+            <div class="water-drops">
+                <img src="./images/7waterdrop.png" alt="">
+            </div>
+            <div class="text">
+                <img src="./images/section_main_text.png" alt="">
+            </div>
+            <div class="btn-april">
+                <a href="#"  data-popup-target="#popup-winner">
+                    <img src="./images/main_btn_april.png" alt="4월 혜리 영상 공유 이벤트 당첨자 확인">
+                </a>
+            </div>
+        </section>
+        <section class="event-fill">
+            <div class="text">
+                <img src="./images/section_fill_text.png" alt="">
+            </div>
+            <div class="tvc-player">
+                <div class="player-wrap">
+                    <img src="./images/tvc_sample.jpg" alt="">
+                </div>
+            </div>
+            <div class="area-input">
+                <div class="title">
+                    <img src="./images/section_fill_input_title.png" alt="">
+                </div>
+                <div class="text-wrap">
+                    <input type="text" value="촉" readonly>
+                    <input type="text" maxlength="1">
+                    <input type="text" maxlength="1">
+                    <input type="text" maxlength="1">
+                    <input type="text" maxlength="1">
+                    <input type="text" maxlength="1">
+                    <input type="text" maxlength="1">
+                </div>
+                <button type="button" class="input-submit">
+                    입력완료
+                </button>
+            </div>
+        </section>
+        <section class="product-info">
+            <div class="product-wrapper">
+                <div class="tap-area">
+                    <button type="button" class="tap _01 is-active" data-tap-target="1">
+                        <img src="./images/tap_01_active.png" alt="">
+                    </button>
+                    <button type="button" class="tap _02" data-tap-target="2">
+                        <img src="./images/tap_02.png" alt="">
+                    </button>
+                    <button type="button" class="tap _03" data-tap-target="3">
+                        <img src="./images/tap_03.png" alt="">
+                    </button>
+                </div>
+                <div class="product-area">
+                    <div class="product-list _01 is-active" data-tap-content="1">
+                        <div class="title">
+                            <img src="./images/tap_01_content_title.jpg" alt="">
+                        </div>
+                        <div class="list-wrap">
+                            <div class="row">
+                                <div class="prd _01">
+                                    <img src="./images/tap_01_product_toner.png" alt="">
+                                    <a href="#" class="detail-btn">
+                                        <span>자세히 보기</span>
+                                    </a>
+                                </div>
+                                <div class="prd _02">
+                                    <img src="./images/tap_01_product_lotion.png" alt="">
+                                    <a href="#" class="detail-btn">
+                                        <span>자세히 보기</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="prd _03">
+                                    <img src="./images/tap_01_product_serum.png" alt="">
+                                    <a href="#" class="detail-btn">
+                                        <span>자세히 보기</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="prd _04">
+                                    <img src="./images/tap_01_product_gel.png" alt="">
+                                    <a href="#" class="detail-btn">
+                                        <span>자세히 보기</span>
+                                    </a>
+                                </div>
+                                <div class="prd _05">
+                                    <img src="./images/tap_01_product_cream.png" alt="">
+                                    <a href="#" class="detail-btn">
+                                        <span>자세히 보기</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-list _02" data-tap-content="2">
+                        <div class="title">
+                            <img src="./images/tap_02_content_title.jpg" alt="">
+                        </div>
+                        <div class="list-wrap">
+                            <div class="row">
+                                <div class="prd _01">
+                                    <img src="./images/tap_02_product_toner.png" alt="">
+                                    <a href="#" class="detail-btn">
+                                        <span>자세히 보기</span>
+                                    </a>
+                                </div>
+                                <div class="prd _02">
+                                    <img src="./images/tap_02_product_lotion.png" alt="">
+                                    <a href="#" class="detail-btn">
+                                        <span>자세히 보기</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="prd _03">
+                                    <img src="./images/tap_02_product_serum.png" alt="">
+                                    <a href="#" class="detail-btn">
+                                        <span>자세히 보기</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="prd _04">
+                                    <img src="./images/tap_02_product_cream.png" alt="">
+                                    <a href="#" class="detail-btn">
+                                        <span>자세히 보기</span>
+                                    </a>
+                                </div>
+                                <div class="prd _05">
+                                    <img src="./images/tap_02_product_night.png" alt="">
+                                    <a href="#" class="detail-btn">
+                                        <span>자세히 보기</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-list _03" data-tap-content="3">
+                        <div class="title">
+                            <img src="./images/tap_03_content_title.jpg" alt="">
+                        </div>
+                        <div class="list-wrap">
+                            <div class="row">
+                                <div class="prd _01">
+                                    <img src="./images/tap_03_product_toner.png" alt="">
+                                    <a href="#" class="detail-btn">
+                                        <span>자세히 보기</span>
+                                    </a>
+                                </div>
+                                <div class="prd _02">
+                                    <img src="./images/tap_03_product_lotion.png" alt="">
+                                    <a href="#" class="detail-btn">
+                                        <span>자세히 보기</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="prd _03">
+                                    <img src="./images/tap_03_product_serum.png" alt="">
+                                    <a href="#" class="detail-btn">
+                                        <span>자세히 보기</span>
+                                    </a>
+                                </div>
+                                <div class="prd _04">
+                                    <img src="./images/tap_03_product_cream.png" alt="">
+                                    <a href="#" class="detail-btn">
+                                        <span>자세히 보기</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        <img src="./images/copyright.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+<?
+	include_once "./popup.html";
+?>
+<script>
+    $(window).scroll(function(){
+        var scTop = $(this).scrollTop();
+        if ( scTop > 20 ){
+            $('#header').addClass('header--scroll');
+        }else {
+            $('#header').removeClass('header--scroll');
+        }
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>It's Skin</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link type="image/icon" rel="shortcut icon" href="http://routine.itsskin.com/images/hydra_favi.ico" />
+
+    <script src="./js/jquery-1.11.2.min.js"></script>
+    <script src="./lib/skrollr-master/dist/skrollr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+    <script src="http://www.youtube.com/player_api"></script>
+    <script src="./js/main.js"></script>
+    
+    <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
+
+</head>
+<body>
+    <div class="page-wrap">
+        <div id="header">
+            <div class="inner">
+                <div class="wrapper">
+					<h1 class="logo">
+						<a href="http://www.itsskin.com" target="_blank" onclick="event1(2)">
+							<img src="./images/logo.png" alt="it's skin">
+						</a>
+                    </h1>
+                    <a href="javascript:void(0)" class="gnb">
+                        <span class="line-wrap">
+                            <span class="top-line"></span>
+                            <span class="middle-line"></span>
+                            <span class="bottom-line"></span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="section1-wrap">
+            <div class="big-serum"></div>
+            <div class="cali">
+                <img src="./images/section1_cali.png" alt="It's my skin">
+            </div>
+            <div class="title">
+                <img src="./images/section1_title.png" alt="하이드라 루틴 레인드롭 세럼">
+            </div>
+            <div class="water-group">
+                <div class="water-drop _1">
+                    <img src="./images/section1_water1.png" alt="물방울이미지1">
+                </div>
+                <div class="water-drop _2">
+                    <img src="./images/section1_water2.png" alt="물방울이미지2">
+                </div>
+                <div class="water-drop _3">
+                    <img src="./images/section1_water3.png" alt="물방울이미지3">
+                </div>
+                <div class="water-drop _4">
+                    <img src="./images/section1_water4.png" alt="물방울이미지4">
+                </div>
+                <div class="water-drop _5">
+                    <img src="./images/section1_water5.png" alt="물방울이미지5">
+                </div>
+                <div class="water-drop _6">
+                    <img src="./images/section1_water6.png" alt="물방울이미지6">
+                </div>
+                <div class="water-drop _7">
+                    <img src="./images/section1_water7.png" alt="물방울이미지7">
+                </div>
+            </div>
+            <div class="scroll-arrow">
+                <img src="./images/section1_scroll_arrow.png" alt="아래로 이동">
+            </div>
+        </div>
+        <div class="section2-wrap">
+            <div class="water-txt">
+                <img src="./images/section2_water_txt.png" alt="">
+            </div>
+            <div class="title">
+                <img src="./images/section2_title.png" alt="">
+            </div>
+            <div class="player-area">
+                <img src="./images/section2_video_sample.png" alt="">
+            </div>
+            <div class="quiz-area">
+                <img src="./images/section2_quiz_title.png" alt="">
+                <div class="quiz-content">
+                    <div class="input-group">
+                        <input type="text" class="blank1">
+                        <input type="text" class="blank2">
+                        <input type="text" class="blank3">
+                        <input type="text" class="blank4">
+                        <input type="text" class="blank5">
+                        <input type="text" class="blank6">
+                        <input type="text" class="blank7">
+                    </div>
+                </div>
+                <button class="quiz-btn"></button>
+            </div>
+            <div class="tab-button-area">
+                <button class="tab _1 is-active" data-tap-target="1">
+                    <img src="./images/tap_btn_1_on.png" alt="">
+                </button>
+                <button class="tab _2" data-tap-target="2">
+                    <img src="./images/tap_btn_2_off.png" alt="">                     
+                </button>
+                <button class="tab _3" data-tap-target="3">
+                    <img src="./images/tap_btn_3_off.png" alt="">                     
+                </button>
+            </div>
+        </div>
+        <div class="section3-wrap">
+            <div class="tab-contents _1 is-active"  data-tap-content="1">
+                <div class="tab-title">
+                    <img src="./images/section3_tab1_title.png" alt="">
+                </div>
+                <div class="list-wrap">
+                    <div class="row">
+                        <div class="prd _03">
+                            <img src="./images/tap_01_product_serum.png" alt="하이드라 루틴 레인드롭 세럼 기획 세트">
+                            <a href="http://www.itsskin.com/shop/view.asp?P_IDX=3382" class="detail-btn" target="_blank" onclick="event1(9)">
+                                <img src="./images/tap_btn_detail_01.jpg" alt="자세히 보기">
+                            </a>
+                        </div>
+                        <div class="prd _01">
+                            <img src="./images/tap_01_product_toner.png" alt="하이드라 루틴 웨이크닝 토너">
+                            <a href="http://www.itsskin.com/shop/view.asp?P_IDX=3380" class="detail-btn" target="_blank" onclick="event1(7)">
+                                <img src="./images/tap_btn_detail_01.jpg" alt="자세히 보기">
+                            </a>
+                        </div>
+                        <div class="prd _02">
+                            <img src="./images/tap_01_product_lotion.png" alt="하이드라 루틴 모이스처라이저">
+                            <a href="http://www.itsskin.com/shop/view.asp?P_IDX=3381" class="detail-btn" target="_blank" onclick="event1(8)">
+                                <img src="./images/tap_btn_detail_01.jpg" alt="자세히 보기">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="prd _04">
+                            <img src="./images/tap_01_product_gel.png" alt="하이드라 루틴 리프레쉬 젤">
+                            <a href="http://www.itsskin.com/shop/view.asp?P_IDX=3384" class="detail-btn" target="_blank" onclick="event1(10)">
+                                <img src="./images/tap_btn_detail_01.jpg" alt="자세히 보기">
+                            </a>
+                        </div>
+                        <div class="prd _05">
+                            <img src="./images/tap_01_product_cream.png" alt="하이드라 루틴 라이블리 크림">
+                            <a href="http://www.itsskin.com/shop/view.asp?P_IDX=3385" class="detail-btn" target="_blank" onclick="event1(11)">
+                                <img src="./images/tap_btn_detail_01.jpg" alt="자세히 보기">
+                            </a>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+            <div class="tab-contents _2" data-tap-content="2">
+                <div class="tab-title">
+                    <img src="./images/section3_tab2_title.png" alt="">
+                </div>
+                <div class="list-wrap">
+                    <div class="row">
+                        <div class="prd _01">
+                            <img src="./images/tap_02_product_toner.png" alt="글로우 루틴 필라이트 토너">
+                            <a href="http://www.itsskin.com/shop/view.asp?P_IDX=3375" class="detail-btn" target="_blank" onclick="event1(12)">
+                                <img src="./images/tap_btn_detail_02.jpg" alt="자세히 보기">
+                            </a>
+                        </div>
+                        <div class="prd _02">
+                            <img src="./images/tap_02_product_lotion.png" alt="글로우 루틴 모이스처라이저">
+                            <a href="http://www.itsskin.com/shop/view.asp?P_IDX=3376" class="detail-btn" target="_blank" onclick="event1(13)">
+                                <img src="./images/tap_btn_detail_02.jpg" alt="자세히 보기">
+                            </a>
+                        </div>
+                        <div class="prd _03">
+                            <img src="./images/tap_02_product_serum.png" alt="글로우 루틴 래디언트 세럼">
+                            <a href="http://www.itsskin.com/shop/view.asp?P_IDX=3377" class="detail-btn" target="_blank" onclick="event1(14)">
+                                <img src="./images/tap_btn_detail_02.jpg" alt="자세히 보기">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="prd _04">
+                            <img src="./images/tap_02_product_cream.png" alt="글로우 루틴 브라이트 크림">
+                            <a href="http://www.itsskin.com/shop/view.asp?P_IDX=3378" class="detail-btn" target="_blank" onclick="event1(15)">
+                                <img src="./images/tap_btn_detail_02.jpg" alt="자세히 보기">
+                            </a>
+                        </div>
+                        <div class="prd _05">
+                            <img src="./images/tap_02_product_night.png" alt="글로우 루틴 필 크림 나이트">
+                            <a href="http://www.itsskin.com/shop/view.asp?P_IDX=3379" class="detail-btn" target="_blank" onclick="event1(16)">
+                                <img src="./images/tap_btn_detail_02.jpg" alt="자세히 보기">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-contents _3" data-tap-content="3">
+                <div class="tab-title">
+                    <img src="./images/section3_tab3_title.png" alt="">
+                </div>
+                <div class="list-wrap">
+                    <div class="row">
+                        <div class="prd _01">
+                            <img src="./images/tap_03_product_toner.png" alt="세라 루틴 에센셜 토너">
+                            <a href="http://www.itsskin.com/shop/view.asp?P_IDX=3371" class="detail-btn" target="_blank" onclick="event1(17)">
+                                <img src="./images/tap_btn_detail_03.jpg" alt="자세히 보기">
+                            </a>
+                        </div>
+                        <div class="prd _02">
+                            <img src="./images/tap_03_product_lotion.png" alt="세라 루틴 모이스처라이저">
+                            <a href="http://www.itsskin.com/shop/view.asp?P_IDX=3372" class="detail-btn" target="_blank" onclick="event1(18)">
+                                <img src="./images/tap_btn_detail_03.jpg" alt="자세히 보기">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="prd _03">
+                            <img src="./images/tap_03_product_serum.png" alt="세라 루틴 리차징 세럼">
+                            <a href="http://www.itsskin.com/shop/view.asp?P_IDX=3373" class="detail-btn" target="_blank" onclick="event1(19)">
+                                <img src="./images/tap_btn_detail_03.jpg" alt="자세히 보기">
+                            </a>
+                        </div>
+                        <div class="prd _04">
+                            <img src="./images/tap_03_product_cream.png" alt="세라 루틴 너리싱 크림">
+                            <a href="http://www.itsskin.com/shop/view.asp?P_IDX=3374" class="detail-btn" target="_blank" onclick="event1(20)">
+                                <img src="./images/tap_btn_detail_03.jpg" alt="자세히 보기">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

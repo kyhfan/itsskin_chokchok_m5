@@ -1,0 +1,188 @@
+@charset 'utf-8';
+
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+html, body {
+    height: 100%;
+}
+.event-wrap {
+    height: 100%;
+	overflow: hidden;
+	display: table;
+	text-align: center;
+}
+/* event */
+.day-list-visual li {
+	opacity: 0;
+	visibility: visible;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+	-webkit-transition: all 0.55s linear;
+/*	-webkit-transition: all 1s cubic-bezier(.77,0,.175,1);*/
+/*	transition: all 1s cubic-bezier(.77,0,.175,1);*/
+}
+.day-list-visual li.bg-mon {
+	z-index: 2;
+	opacity: 0;
+	background: url(../images/event_mon_bg.jpg) center no-repeat;
+	background-size: cover;
+}
+.day-list-visual li.bg-tue {
+	z-index: 2;
+	opacity: 0;
+	background: url(../images/event_tue_bg.jpg) center no-repeat;
+	background-size: cover;
+}
+.day-list-visual li.bg-wen {
+	z-index: 2;
+	opacity: 0;
+	background: url(../images/event_wen_bg.jpg) center no-repeat;
+	background-size: cover;
+}
+.day-list-visual li.bg-thu {
+	z-index: 2;
+	opacity: 0;
+	background: url(../images/event_thu_bg.jpg) center no-repeat;
+	background-size: cover;
+}
+.day-list-visual li.bg-fri {
+	z-index: 2;
+	opacity: 0;
+	background: url(../images/event_fri_bg.jpg) center no-repeat;
+	background-size: cover;
+}
+.day-list-visual li.bg-sat {
+	z-index: 2;
+	opacity: 0;
+	background: url(../images/event_sat_bg.jpg) center no-repeat;
+	background-size: cover;
+}
+.day-list-visual li.bg-sun {
+	z-index: 2;
+	opacity: 0;
+	background: url(../images/event_sun_bg.jpg) center no-repeat;
+	background-size: cover;
+}
+.day-list-visual.is-ready li.bg-cover {
+	background: none;
+	z-index: -1;
+}
+
+.day-list-visual li.visible {
+	opacity: 1;
+	z-index: 2;
+}
+.day-list-visual li video {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	-o-object-fit: cover;
+	object-fit: cover;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+}
+.day-list-visual li.bg-cover {
+	z-index: 2;
+	opacity: 1;
+	background: url(../images/event_cover.png) center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.day-list-visual li img {
+    height: 100%;
+}
+.event-wrap .contents-wrap {
+    position: relative;
+    /* width: 83%; */
+    /* height: 560px; */
+    margin: 0 auto;
+    text-align: center;
+	z-index: 2;
+	display: table-cell;
+	vertical-align: middle;
+
+}
+.event-wrap .contents-wrap .event-title{
+    z-index: 2;
+	/* padding: 78px 0 13px; */
+	width: 83%;
+	margin: 0 auto;
+}
+.event-wrap .contents-wrap .event-title img{
+    width: 100%;
+}
+.event-wrap .contents-wrap .sub-more{
+    background: url(../images/event_info.png) no-repeat center;
+    background-size: 35.5px auto;
+    width: 35px;
+    height: 38px;
+	z-index: 2;
+	margin: 12px 0 20px 0;
+	/* margin-top: 12px; */
+    /* top: 23%; */
+    /* left: 50%;
+	-webkit-transform: translate(-50%, 0%);
+	transform: translate(-50%, 0%);     */
+}
+.event-wrap .contents-wrap .event-sub-title{
+    /* width: 51.2%; */
+    width: 159px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 30px 0 24px 0;
+}
+.event-wrap .contents-wrap .event-sub-title img{
+	width: 100%;
+}
+.event-wrap .contents-wrap .paging-area {
+	margin: 0 auto;
+	text-align: center;
+	width: 50px;
+}
+.event-wrap .contents-wrap .paging-area .paging-week {
+	height: 230px;
+}
+.event-wrap .contents-wrap .paging-area .paging-week div {
+	font-size: 60px;
+	color: #fff;
+	opacity: 0.4;
+	height: 60px;
+	line-height: 60px;
+	margin-bottom: 15px;
+}
+.event-wrap .contents-wrap .paging-area .paging-week div.is-active{
+	opacity: 1;
+	-webkit-transition: all 0.55s linear;
+}
+
+.event-wrap .contents-wrap .paging-area .paging-week a{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.event-wrap .contents-wrap .paging-area .paging-prev {
+	width: 35px;
+	margin: 0 auto;
+	padding-bottom: 15px;
+}
+.event-wrap .contents-wrap .paging-area .paging-prev img{
+	width: 100%;
+}
+.event-wrap .contents-wrap .paging-area .paging-next {
+	width: 35px;
+	margin: 0 auto;
+	padding-top: 15px;
+}
+.event-wrap .contents-wrap .paging-area .paging-next img{
+	width: 100%;
+}

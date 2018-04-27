@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Document</title>
+		<link rel="stylesheet" href="./css/reset.css">
+		<link rel="stylesheet" href="./css/common.css">
+		<link rel="stylesheet" href="./css/main.css">
+		<script src="./js/jquery-1.11.2.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+		<script src="./lib/skrollr-master/dist/skrollr.min.js"></script>
+		<script src="./js/main.js"></script>
+	</head>
+	<body>
+		<div class="page-wrap" id="#skrollr-body">
+			<div id="header">
+				<div class="inner">
+					<div class="wrapper">
+						<h1 class="logo">
+							<a href="javascript:void(0)">
+								<img src="./images/logo.png" alt="it's skin">
+							</a>
+						</h1>
+						<div class="gnb">
+							<a href="javascript:void(0)" class="is-active">
+								<span>It’s My 세럼</span>
+							</a>
+							<a href="javascript:void(0)">
+								<span>내게 맞는 루틴 찾기</span>
+								
+							</a>
+							<a href="javascript:void(0)">
+								<span>촉촉 영상 공유 EVENT</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content main">
+				<a href="javascript:void(0)" data-popup-target="#popup-share"></a>
+				<div class="line left">
+					<img src="./images/line_left_main.png" alt="">
+				</div>
+				<div class="line right">
+					<img src="./images/line_right_main.png" alt="">
+				</div>
+				<section class="main-visual skrollable skrollable-between" data-0="background-position: 50% 0px" data-1000="background-position: 50% -100px">
+					<div class="serum">
+						<img src="./images/section_main_product.png" alt="" class="wave" data-wave="0.6">
+					</div>
+					<div class="cali"></div>
+					<div class="text">
+						<img src="./images/section_main_text.png" alt="">
+						<div class="obj-group">
+							<span class="obj" data-idx="0">
+								<img src="./images/main_text_obj.png" alt="촉">
+							</span>
+							<span class="obj" data-idx="1">
+								<img src="./images/main_text_obj.png" alt="촉">
+							</span>
+							<span class="obj" data-idx="2">
+								<img src="./images/main_text_obj.png" alt="촉">
+							</span>
+							<span class="obj" data-idx="3">
+								<img src="./images/main_text_obj.png" alt="촉">
+							</span>
+							<span class="obj" data-idx="4">
+								<img src="./images/main_text_obj.png" alt="촉">
+							</span>
+							<span class="obj" data-idx="5">
+								<img src="./images/main_text_obj.png" alt="촉">
+							</span>
+							<span class="obj" data-idx="6">
+								<img src="./images/main_text_obj.png" alt="촉">
+							</span>
+						</div>
+					</div>
+					<div class="tvc-player">
+						<img src="./images/tvc_sample.jpg" alt="">
+					</div>
+					<div class="water-group left">
+						<div class="water-drop _01 skrollable skrollable-between" data-0="top: 494px" data-end="top: -503px">
+							<img src="./images/section_main_water_01.png">
+						</div>
+						<div class="water-drop _02 skrollable skrollable-between" data-0="top: 549px" data-end="top: -800px">
+							<img src="./images/section_main_water_02.png">
+						</div>
+						<div class="water-drop _03 skrollable skrollable-between" data-0="top: 572px" data-end="top: -600px">
+							<img src="./images/section_main_water_03.png">
+						</div>
+						<div class="water-drop _04 skrollable skrollable-between" data-0="top: 622px" data-end="top: -400px">
+							<img src="./images/section_main_water_04.png">
+						</div>
+					</div>
+					<div class="water-group right">
+						<div class="water-drop _05 skrollable skrollable-between" data-0="top: 158px" data-end="top: -550px">
+							<img src="./images/section_main_water_05.png">
+						</div>
+						<div class="water-drop _06 skrollable skrollable-between" data-0="top: 151px" data-end="top: -405px">
+							<img src="./images/section_main_water_06.png">
+						</div>
+						<div class="water-drop _07 skrollable skrollable-between" data-0="top: 205px" data-end="top: -670px">
+							<img src="./images/section_main_water_07.png">
+						</div>
+					</div>
+				</section>
+				<section class="product-info">
+					<div class="product-wrapper">
+						<div class="tap-area">
+							<button type="button" class="tap _01 is-active" data-tap-target="1">
+								<img src="./images/tap_01_active.png" alt="수분루틴">
+							</button>
+							<button type="button" class="tap _02" data-tap-target="2">
+								<img src="./images/tap_02.png" alt="광채루틴">
+							</button>
+							<button type="button" class="tap _03" data-tap-target="3">
+								<img src="./images/tap_03.png" alt="보습루틴">
+							</button>
+						</div>
+						<div class="product-area">
+							<div class="dummy">
+								<div class="product-list _01 is-active" data-tap-content="1">
+									<div class="title">
+										<img src="./images/tap_01_content_title.jpg" alt="">
+									</div>
+									<div class="list-wrap">
+										<div class="row">
+											<div class="prd _01">
+												<img src="./images/tap_01_product_toner.png" alt="">
+												<a href="#" class="detail-btn">
+													<span>자세히 보기</span>
+												</a>
+											</div>
+											<div class="prd _02">
+												<img src="./images/tap_01_product_lotion.png" alt="">
+												<a href="#" class="detail-btn">
+													<span>자세히 보기</span>
+												</a>
+											</div>
+											<div class="prd _03">
+												<img src="./images/tap_01_product_serum.png" alt="">
+												<a href="#" class="detail-btn">
+													<span>자세히 보기</span>
+												</a>
+											</div>
+										</div>
+										<div class="row">
+											<div class="prd _04">
+												<img src="./images/tap_01_product_gel.png" alt="">
+												<a href="#" class="detail-btn">
+													<span>자세히 보기</span>
+												</a>
+											</div>
+											<div class="prd _05">
+												<img src="./images/tap_01_product_cream.png" alt="">
+												<a href="#" class="detail-btn">
+													<span>자세히 보기</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="product-list _02" data-tap-content="2">
+									<div class="title">
+										<img src="./images/tap_02_content_title.jpg" alt="">
+									</div>
+									<div class="list-wrap">
+										<div class="row">
+											<div class="prd _01">
+												<img src="./images/tap_02_product_toner.png" alt="">
+												<a href="#" class="detail-btn">
+													<span>자세히 보기</span>
+												</a>
+											</div>
+											<div class="prd _02">
+												<img src="./images/tap_02_product_lotion.png" alt="">
+												<a href="#" class="detail-btn">
+													<span>자세히 보기</span>
+												</a>
+											</div>
+											<div class="prd _03">
+												<img src="./images/tap_02_product_serum.png" alt="">
+												<a href="#" class="detail-btn">
+													<span>자세히 보기</span>
+												</a>
+											</div>
+										</div>
+										<div class="row">
+											<div class="prd _04">
+												<img src="./images/tap_02_product_cream.png" alt="">
+												<a href="#" class="detail-btn">
+													<span>자세히 보기</span>
+												</a>
+											</div>
+											<div class="prd _05">
+												<img src="./images/tap_02_product_night.png" alt="">
+												<a href="#" class="detail-btn">
+													<span>자세히 보기</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="product-list _03" data-tap-content="3">
+									<div class="title">
+										<img src="./images/tap_03_content_title.jpg" alt="">
+									</div>
+									<div class="list-wrap">
+										<div class="row">
+											<div class="prd _01">
+												<img src="./images/tap_03_product_toner.png" alt="">
+												<a href="#" class="detail-btn">
+													<span>자세히 보기</span>
+												</a>
+											</div>
+											<div class="prd _02">
+												<img src="./images/tap_03_product_lotion.png" alt="">
+												<a href="#" class="detail-btn">
+													<span>자세히 보기</span>
+												</a>
+											</div>
+										</div>
+										<div class="row">
+											<div class="prd _03">
+												<img src="./images/tap_03_product_serum.png" alt="">
+												<a href="#" class="detail-btn">
+													<span>자세히 보기</span>
+												</a>
+											</div>
+											<div class="prd _04">
+												<img src="./images/tap_03_product_cream.png" alt="">
+												<a href="#" class="detail-btn">
+													<span>자세히 보기</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<img src="./images/copyright.jpg" alt="">
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+<script type="text/javascript">
+	var s = skrollr.init({
+//		forceHeight: false,
+		skrollrBody: 'skrollr-body',
+		smoothScrolling: true,
+		smoothScrollingDuration: 500,
+//		easing: 'swing'
+	});
+	
+	var ta = new TimelineMax({repeat: 0});
+	var textObjs = $('.text .obj');
+		titleAnim(textObjs[0]);
+//	setTimeout(function() {
+//		titleAnim(textObjs[0]);
+//	}, 1000);
+	
+	function titleAnim(target) {
+		var idx = $(target).data('idx');
+		console.log(idx);
+		if(idx<=6) {
+			ta.to(target, 0.01, {autoAlpha: 1})
+				.to(target, 0.05, {y: -3, delay: 0.01})
+				.to(target, 0.02, {y: 0, delay: 0.07, ease: Bounce.easeOut, onComplete: function() {
+					setTimeout(function() {
+						titleAnim(textObjs[idx+1]);
+					}, 10);
+				}});
+		}
+	}
+//	var mainTitleTimer = setInterval(function() {
+//		ta.kill();
+//		titleAnim(textObjs[0]);
+//	}, 7000);
+	
+	
+	(function($){
+		var x;
+		var y;
+		var waves = $('.wave').each(function(){
+			this.np = 0;
+			this.ep = 0;
+			this.yp = 0;
+			this.lv = this.getAttribute('data-wave')*1;
+		});
+		function move(){
+			this.ep = this.lv*x;
+			this.yp = this.lv*y;
+		}
+		function loop() {
+			this.np = this.np + (this.ep - this.np)*0.1;
+			this.yp = this.yp + (this.yp - this.yp)*0.1;
+			this.style.transform = "translate("+this.np+'px'+", "+this.yp+'px'+")";
+			//			this.style.transform = "translate("+this.np+'px'+")";
+		}
+		$(window).mousemove(function(e){
+			x = (e.clientX - $(window).width()/2) / 50;
+			y = (e.clientY - $(window).height()/2) / 50;
+			waves.each(move);
+		});
+
+		setInterval(function(){
+			waves.each(loop);
+		},33);
+		
+		
+		
+		
+	})(jQuery);
+	$(document).on('mouseover', '.water-drop', function() {
+		if(!$(this).hasClass('rubberBand')) {
+				$(this).addClass('rubberBand');
+		} else {
+				$(this).removeClass('rubberBand');
+		}
+	});
+	
+	
+</script>
+	</body>
+</html>

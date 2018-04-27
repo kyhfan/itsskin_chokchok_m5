@@ -1,0 +1,173 @@
+    <!-- 이벤트 안내 팝업 -->
+    <div class="popup-wrap">
+		<span class="popup-align"></span>
+		<div class="popup info" id="popup-info">
+			<div class="inner">
+				<div class="info-wrap">
+					<div class="info-area">
+						<img src="./images/popup/popup_info_content.png" alt="">
+					</div>
+				</div>
+			</div>
+			<a href="javascript:void(0)" class="btn-close"></a>
+		</div>
+	</div>
+    <!-- 이벤트 안내 팝업 -->
+
+    <!-- 이벤트 공유 팝업 -->
+	<div class="popup-wrap">
+		<span class="popup-align"></span>
+		<div class="popup share active" id="popup-share">
+			<div class="inner">
+				<div class="title">
+					<img src="./images/popup/popup_share_title.png" alt="촉촉촉촉촉촉촉이 필요한 오늘!">
+				</div>
+				<div class="share-wrap">
+					<div class="image-area">
+                        <!-- <img src="./images/popup/popup_share_video_sample.png" alt=""> -->
+                        <iframe allowfullscreen="1" src="" frameborder="0" id="share_player" class="share_player"></iframe>
+					</div>
+					<div class="share-area">
+						<button class="fb-share-btn" data-share-target="fb" onclick="event1(23)"></button>
+						<button class="ks-share-btn" data-share-target="ks" onclick="event1(24)"></button>
+						<button class="kt-share-btn" data-share-target="kt" onclick="event1(55)"></button>
+						<button class="blog-share-btn" data-share-target="blog" onclick="event1(25)"></button>
+					</div>
+					<div class="notice-area">
+						<img src="./images/popup/popup_share_notice.png" alt="">
+					</div>
+				</div>
+			</div>
+			<a href="javascript:void(0)" class="btn-close"></a>
+		</div>
+	</div>
+    <!-- 이벤트 공유 팝업 -->
+        
+    <!-- 이벤트 정보 입력 팝업 -->
+    <div class="popup-wrap">
+		<span class="popup-align"></span>
+		<div class="popup input" id="popup-input">
+			<div class="inner">
+				<div class="title">
+					<img src="./images/popup/popup_input_title.png" alt="공유 URL을 입력하면 하이드라루틴세럼 당첨 확률 UP!">
+				</div>
+				<div class="input-wrap">
+					<div class="input-group">
+						<div class="guide">
+							<span>이름</span>
+						</div>
+						<div class="input-box">
+							<input type="text" id="mb_name">
+						</div>
+					</div>
+					<div class="input-group">
+						<div class="guide">
+							<span>휴대전화</span>
+						</div>
+						<div class="input-box">
+							<input type="tel" id="mb_phone1" onkeyup="only_num(this);chk_strlen(this,3,2);">
+							<input type="tel" id="mb_phone2" onkeyup="only_num(this);chk_strlen(this,4,3);">
+							<input type="tel" id="mb_phone3" onkeyup="only_num(this);chk_strlen(this,4,0);">
+						</div>
+					</div>
+					<div class="input-group">
+						<div class="guide">
+							<span>주소</span>
+						</div>
+						<div class="input-addr-box">
+							<input type="text" id="mb_addr1" class="addr-text" readonly>
+							<button class="find-addr" onclick="findAddr()" value="새주소 찾기">새주소 찾기</button>
+						</div>
+					</div>
+					<div class="input-group">
+						<div class="guide">
+							<span></span>
+						</div>
+						<div class="input-box">
+							<input type="text" id="mb_addr2">
+						</div>
+					</div>
+					<!-- <div class="input-group">
+						<div class="guide">
+							<span>공유 URL</span>
+						</div>
+						<div class="input-box">
+							<input type="text">
+						</div>
+					</div> -->
+					<div class="agree-area">
+						<div>
+							<span>개인정보 수집 동의</span>
+						</div>
+						<button class="agree-btn" id="agree1_btn" data-popup-target="#popup-agree1"></button>
+						<div class="agree-line"></div>
+						<div>
+							<span>개인정보 취급 동의</span>
+						</div>
+						<button class="agree-btn" id="agree2_btn" data-popup-target="#popup-agree2"></button>
+					</div>
+					<div class="submit-area">
+						<button class="input-submit-btn" onclick="event1(26)"></button>
+					</div>
+				</div>
+				<div class="notice-area">
+					<img src="./images/popup/popup_input_notice.png" alt="">
+				</div>
+			</div>
+			<a href="javascript:void(0)" class="btn-close"></a>
+		</div>
+    </div>
+    <!-- 이벤트 정보 입력 팝업 -->
+
+    <!-- 개인정보 수집 동의 약관 팝업 -->
+    <div class="popup-wrap">
+		<span class="popup-align"></span>
+		<div class="popup agree1" id="popup-agree1">
+			<div class="inner">
+				<div class="agree1-wrap">
+					<div class="agree1-area">
+						<img src="./images/popup/popup_agree1_content.png" alt="">
+					</div>
+					<button class="confirm-btn" data-popup-target="#popup-input" data-popup-agree="#popup-agree1"></button>
+				</div>
+			</div>
+		</div>
+	</div>
+    <!-- 개인정보 수집 동의 약관 팝업 -->
+
+    <!-- 개인정보 취급 동의 약관 팝업 -->
+	<div class="popup-wrap">
+		<span class="popup-align"></span>	
+		<div class="popup agree2" id="popup-agree2">
+			<div class="inner">
+				<div class="agree2-wrap">
+					<div class="agree2-area">
+						<img src="./images/popup/popup_agree2_content.png" alt="">
+					</div>
+					<button class="confirm-btn" data-popup-target="#popup-input" data-popup-agree="#popup-agree2"></button>
+				</div>
+			</div>
+		</div>
+	</div>
+    <!-- 개인정보 취급 동의 약관 팝업 -->
+	<!-- 블로그 팝업 -->
+<div class="popup-wrap">
+	<span class="popup-align"></span>	
+	<div class="popup blog" id="popup-blog">
+		<div class="inner">
+			<div class="blog-wrap">
+				<div class="title">
+					<img src="./images/popup/popup_blog_title.png" alt="아래 소스를 복사해서 사용해주세요">
+				</div>
+				<div class="link-box">
+					<div class="input-outer">
+						<input type="text" readonly value="<a href='http://power10.itsskin.com'><img src='http://power10.itsskin.com/libs/front/images/base_vc0.png' alt='잇츠스킨 파워10 퍼스널 스킨 컬러' /></a>">
+						<button type="button" class="btn-copy">복사</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a href="javascript:void(0)" class="btn-close"></a>
+	</div>
+</div>
+	<!-- 블로그 팝업 -->

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/event.css">
+	<script src="./js/jquery-1.11.2.min.js"></script>
+	<script src="./js/main.js"></script>
+</head>
+<body>
+	<div class="page-wrap">
+		<ul class="day-list-visual">
+			<li class="bg-cover">
+				<img src="./images/event_cover.png" alt="커버 이미지">
+			</li>
+			<li data-day="mon">
+				<video autoplay preload loop muted>
+					<source src="./videos/it_s skin_digital_monday_5A.mov" type="video/mp4">
+				</video>
+			</li>
+			<li data-day="tue">
+				<video autoplay preload loop muted>
+					<source src="./videos/it_s skin_digital_thursday_5B.mov" type="video/mp4">
+				</video>
+			</li>
+			<li data-day="wed">
+				<video autoplay preload loop muted>
+					<source src="./videos/it_s skin_digital_wednesday_5B.mov" type="video/mp4">
+				</video>
+			</li>
+			<li data-day="thu">
+				<video autoplay preload loop muted>
+					<source src="./videos/it_s skin_digital_thursday_5B.mov" type="video/mp4">
+				</video>
+			</li>
+			<li data-day="fri">
+				<video autoplay preload loop muted>
+					<source src="./videos/it_s skin_digital_wednesday_5B.mov" type="video/mp4">
+				</video>
+			</li>
+			<li data-day="sat">
+				<video autoplay preload loop muted>
+					<source src="./videos/it_s skin_digital_monday_5A.mov" type="video/mp4">
+				</video>
+			</li>
+			<li data-day="sun">
+				<video autoplay preload loop muted>
+					<source src="./videos/it_s skin_digital_sunday_5A.mov" type="video/mp4">
+				</video>
+			</li>
+		</ul>
+		<div class="event-title">
+			<ul>
+				<li><img src="./images/chok_txt.png" alt="촉"></li>
+				<li><img src="./images/chok_txt.png" alt="촉"></li>
+				<li><img src="./images/chok_txt.png" alt="촉"></li>
+				<li><img src="./images/chok_txt.png" alt="촉"></li>
+				<li><img src="./images/chok_txt.png" alt="촉"></li>
+				<li><img src="./images/chok_txt.png" alt="촉"></li>
+				<li><img src="./images/chok_txt.png" alt="촉"></li>
+				<li class="title-more-txt"><img src="./images/chok_more_txt.png" alt="촉"></li>
+			</ul>
+			<div class="sub-title">
+				<img src="./images/event_sub_title.png" alt="혜리처럼 일주일 내내 고통받는 내 피부 요일별 영상을 #촉촉촉촉촉촉촉 해시태그와 함께 SNS에 영상 공유하고 7촉 세럼 받자!">
+			</div>
+			<div class="sub-more-text">
+				<img src="./images/event_more_info.png" alt="">
+			</div>
+			<button class="sub-more"></button>
+			<!-- <div class="sub-more">
+				<img src="./images/event_more_arrow.png" alt="more">
+			</div> -->
+		</div>
+		<div class="event-week">
+			<div class="mouse-hover mon">
+				<img src="./images/event_mouse_hover.png" alt="마우스를 올려보세요!">
+			</div>
+			<ul class="day-list-menu">
+				<li><a href="#" data-day-target="mon">월</a></li>
+				<li><a href="#" data-day-target="tue">화</a></li>
+				<li><a href="#" data-day-target="wed">수</a></li>
+				<li><a href="#" data-day-target="thu">목</a></li>
+				<li><a href="#" data-day-target="fri">금</a></li>
+				<li><a href="#" data-day-target="sat">토</a></li>
+				<li><a href="#" data-day-target="sun">일</a></li> 
+			</ul>
+			<button class="share_gift" data-popup-target="#popup-share" data-dynamic-name="mon"></button>
+			<!-- <div class="share_gift">
+				<a href="javascript:void(0)"><img src="./images/event_join_mon_btn.png" alt=""></a>
+			</div> -->
+			<div class="event-info">
+				<img src="./images/event_info.png" alt="">
+			</div>
+		</div>
+	</div>
+	<div class="popup-wrap">
+		<span class="popup-align"></span>
+		<div class="popup share active" id="popup-share">
+			<div class="inner">
+				<div class="title">
+					<img src="./images/popup/popup_share_title.png" alt="촉촉촉촉촉촉촉이 필요한 오늘!">
+				</div>
+				<div class="share-wrap">
+					<div class="image-area" data-dynamic-value="">
+						<img src="./images/popup/share_sample_image.png" alt="">
+					</div>
+					<div class="share-area">
+						<button class="fb-share-btn"></button>
+						<button class="ks-share-btn"></button>
+						<button class="blog-share-btn"></button>
+					</div>
+					<div class="notice-area">
+						<img src="./images/popup/popup_share_notice.png" alt="">
+					</div>
+				</div>
+			</div>
+			<a href="#popup-close" class="btn-close popup-close"></a>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+//		(function($){
+//			var $win = $(window),
+//				$doc = $(document),
+//				$html = $('html');
+//			
+//			var eventPage = {
+//				bind: function() {
+//					var _this = this;
+//					$doc.on('mouseover', '[data-day-target]', function() {
+//						var $visualWrap = $visualWrap || $('.day-list-visual');
+//						var $menuWrap = $menuWrap || $('.day-list-menu');
+//						var target = $(this).data('day-target');
+//						$menuWrap.find('li').removeClass('is-active');
+//						$(this).closest('li').addClass('is-active');
+//						$('[data-day]').removeClass('visible');
+//						if($visualWrap.hasClass('is-ready')) {
+////							첫 화면 제거되어있음, 타겟 동영상 재생 
+//							_this.play(target);
+//						}else{
+////							첫 화면 제거
+//							$visualWrap.addClass('is-ready');
+//							_this.play(target);
+//							$(".event-info").fadeIn();
+//							$(".share_gift").fadeIn();
+//							$(".event-title").fadeOut();
+//						}
+//					});
+////					$doc.on('click', '[data-day-target]', function() {
+////						if($(this).closest('ul').hasClass('is-ready')) {
+//////							첫 화면 제거되어있음, 클릭 이벤트 블로킹
+////							return;
+////						}
+////						
+//////						카피, 요일 모션
+////						$(this).closest('ul').addClass('is-ready');
+////					});
+//				},
+//				play: function(key) {
+////					console.log($("[data-day='"+key+"']"));
+//					$("[data-day='"+key+"']").addClass('visible');
+////					$("[data-popup-target]")
+//					// $(".share_gift > img").attr("src","./images/event_join_"+key+"_btn.png")
+//					$(".share_gift").stop().fadeOut("fast", function(){
+//						$(this).css("background","url(./images/event_join_"+key+"_btn.png) center")
+//						$(this).fadeIn();
+//						$(this).attr('data-dynamic-name', key);
+//					});
+//				}
+//			};
+//			eventPage.bind();
+//
+//			var popup = {
+//				bind: function() {
+//					$doc.on('click', '[data-popup-target]', function() {
+//						var popupId = $(this).data('popup-target'),
+//							dynamicName = $(this).data('dynamic-name');
+//						
+//						popup.open(popupId, dynamicName)
+//					});
+//					$doc.on('click', '.popup-close', function(e) {
+//						var $target = $(this).closest('.popup');
+//						e.preventDefault();
+//						popup.close($target);
+//					});
+//				},
+//				open: function(popupId, dn) {
+//					var $popup = $(popupId),
+//						$wrap = $popup.parent();
+//
+//					if (!$wrap.hasClass('popup-wrap')){
+//						$popup.wrap('<div class="popup-wrap"></div>');
+//						$wrap = $popup.parent();
+//						$wrap.prepend('<span class="popup-align"></span>');
+//						
+//					}
+//					if($popup.length) {
+////						팝업 오픈
+//						$html.addClass('popup-opened');
+//						$wrap.addClass('is-opened');
+////						요일별 처리
+//						if(dn.length) {
+//	//						console.log(dn);
+//						}
+//					}
+//					
+//				},
+//				close: function($target) {
+//					$target.closest('.popup-wrap').removeClass('is-opened');
+//					$html.removeClass('popup-opened');
+//				}
+//			}
+//			popup.bind();
+//
+//		})(jQuery);
+//
+//		$(".sub-more").on("click", function(){
+//			$(".sub-more").fadeOut();
+//			$(".sub-more-text").fadeIn();
+//
+//		});
+	</script>
+</body>
+</html>
