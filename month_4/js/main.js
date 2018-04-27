@@ -382,6 +382,10 @@ $(function(){
 			}
 		}).open();	
 	});
+
+    $(".menu-trigger").on("click", function() {
+        $(".navi").toggleClass('is-active');
+    });
 });
 
 function only_num(obj)

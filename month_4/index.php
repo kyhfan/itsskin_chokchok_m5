@@ -29,21 +29,42 @@ include_once "./head.php";
 							<img src="./images/logo.png" alt="it's skin">
 						</a>
 					</h1>
-					<div class="gnb">
-						<a href="javascript:void(0)" class="is-active" onclick="event1(3)">
-							<span>It’s My 세럼</span>
-						</a>
-						<a href="javascript:void(0)" class="go_routine" onclick="event1(4)">
-							<span>내게 맞는 루틴 찾기</span>
-
-						</a>
-						<a href="event.php" onclick="event1(5)">
-							<span>촉촉 영상 공유 EVENT</span>
-						</a>
-					</div>
+<!--					<div class="gnb">-->
+<!--						<a href="javascript:void(0)" class="is-active" onclick="event1(3)">-->
+<!--							<span>It’s My 세럼</span>-->
+<!--						</a>-->
+<!--						<a href="javascript:void(0)" class="go_routine" onclick="event1(4)">-->
+<!--							<span>내게 맞는 루틴 찾기</span>-->
+<!---->
+<!--						</a>-->
+<!--						<a href="event.php" onclick="event1(5)">-->
+<!--							<span>촉촉 영상 공유 EVENT</span>-->
+<!--						</a>-->
+<!--					</div>-->
+                    <a href="javascript:void(0)" class="gnb menu-trigger">
+                        <span class="line-wrap">
+                            <span class="top-line"></span>
+                            <span class="middle-line"></span>
+                            <span class="bottom-line"></span>
+                        </span>
+                    </a>
 				</div>
 			</div>
 		</div>
+        <div class="navi">
+            <div class="close_navi menu-trigger">
+                <a href="javascript:void(0)"><img src="./images/navi_close.png" alt="닫기"></a>
+            </div>
+            <div class="navi-menu">
+                <ul>
+                    <li class="is-active"><a href="index.php?pTarget=goMain" onclick="event1(3)">It's My 세럼</a></li>
+                    <li><a href="index.php?pTarget=goRoutin" class="go_routine" onclick="event1(4)">내게 맞는 루틴 찾기</a></li>
+                    <!-- <li>QUIZ SHOW</li> -->
+                    <li><a href="event.php">촉촉 영상 공유 이벤트</a></li>
+                    <li><a href="../index.php">진행중인 이벤트</a></li>
+                </ul>
+            </div>
+        </div>
 		<div class="content main skrollable skrollable-between" data-0="background-position: 50% 0px" data-2679="background-position: 50% -455px">
 			<a href="javascript:void(0)" data-popup-target="#popup-share"></a>
 			<div class="mini-nav">
