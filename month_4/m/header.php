@@ -24,7 +24,7 @@
 						<li class="is-active"><a href="index.php?pTarget=main" onclick="event1(3)">It's My 세럼</a></li>
 						<li><a href="index.php?pTarget=goRoutin" class="go_routine" onclick="event1(4)">내게 맞는 루틴 찾기</a></li>
 						<li><a href="event.php" onclick="event1(5)">촉촉 영상 공유 이벤트</a></li>
-						<li><a href="../../m/index.php">진행중인 이벤트</a></li>
+						<li><a href="../../m/index.php">진행중인 이벤트<img src="./images/new_ico.png" alt="" style="width: 29px; vertical-align: 0px; margin-left: 5px;"></a></li>
 					</ul>
 				</div>
 			</div>

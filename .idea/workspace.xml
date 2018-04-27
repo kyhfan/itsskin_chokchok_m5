@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="916e13ee-4180-47e8-bf56-0f33f8cca72e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/month_4/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/month_4/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/month_4/event.php" beforeDir="false" afterPath="$PROJECT_DIR$/month_4/event.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/month_4/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/month_4/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/month_4/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/month_4/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/month_4/m/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/month_4/m/css/common.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/month_4/m/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/month_4/m/header.php" afterDir="false" />
     </list>
@@ -18,21 +16,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/month_4/js/main.js">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/month_4/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="738">
-              <caret line="387" column="7" selection-start-line="387" selection-start-column="7" selection-end-line="387" selection-end-column="7" />
+            <state relative-caret-position="433">
+              <caret line="63" column="121" selection-start-line="63" selection-start-column="121" selection-end-line="63" selection-end-column="121" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/month_4/index.php">
+        <entry file="file://$PROJECT_DIR$/month_4/m/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="530">
-              <caret line="59" column="41" selection-start-line="59" selection-start-column="41" selection-end-line="59" selection-end-column="41" />
-            </state>
+            <state relative-caret-position="-116" />
           </provider>
         </entry>
       </file>
@@ -48,17 +44,17 @@
       <file leaf-file-name="event.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/month_4/event.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="81" column="20" selection-start-line="81" selection-start-column="20" selection-end-line="85" selection-end-column="27" />
+            <state relative-caret-position="740">
+              <caret line="100" column="117" selection-start-line="100" selection-start-column="117" selection-end-line="100" selection-end-column="117" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="common.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="common.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/month_4/m/css/common.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="141" column="13" selection-start-line="141" selection-start-column="13" selection-end-line="141" selection-end-column="13" />
+            <state relative-caret-position="392">
+              <caret line="187" column="17" selection-start-line="187" selection-start-column="17" selection-end-line="187" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -99,11 +95,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/month_4/m/header.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="416">
-              <caret line="26" column="58" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="58" />
+              <caret line="26" column="140" selection-start-line="26" selection-start-column="140" selection-end-line="26" selection-end-column="140" />
             </state>
           </provider>
         </entry>
@@ -115,9 +111,10 @@
       <find>menu</find>
       <find>alert</find>
       <find>navi</find>
-      <find>close_intro</find>
       <find>gnb</find>
       <find>#header .menu-layer</find>
+      <find>#header .menu-layer ul.list li a</find>
+      <find>close_intro</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -130,11 +127,11 @@
         <option value="$PROJECT_DIR$/m/index.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/month_4/js/main.js" />
-        <option value="$PROJECT_DIR$/month_4/event.php" />
-        <option value="$PROJECT_DIR$/month_4/index.php" />
         <option value="$PROJECT_DIR$/month_4/css/main.css" />
-        <option value="$PROJECT_DIR$/month_4/m/header.php" />
         <option value="$PROJECT_DIR$/month_4/m/css/common.css" />
+        <option value="$PROJECT_DIR$/month_4/index.php" />
+        <option value="$PROJECT_DIR$/month_4/event.php" />
+        <option value="$PROJECT_DIR$/month_4/m/header.php" />
       </list>
     </option>
   </component>
@@ -256,12 +253,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1524813897983</updated>
-      <workItem from="1524813899234" duration="9793000" />
+      <workItem from="1524813899234" duration="10773000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9793000" />
+    <option name="totallyTimeSpent" value="10773000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1177" extended-state="6" />
@@ -347,20 +344,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/month_4/event.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="81" column="20" selection-start-line="81" selection-start-column="20" selection-end-line="85" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/month_4/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="59" column="41" selection-start-line="59" selection-start-column="41" selection-end-line="59" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="523">
@@ -389,17 +372,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/month_4/m/header.php">
+    <entry file="file://$PROJECT_DIR$/month_4/m/css/common.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="26" column="58" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="58" />
+        <state relative-caret-position="392">
+          <caret line="187" column="17" selection-start-line="187" selection-start-column="17" selection-end-line="187" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/month_4/m/css/common.css">
+    <entry file="file://$PROJECT_DIR$/month_4/m/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="141" column="13" selection-start-line="141" selection-start-column="13" selection-end-line="141" selection-end-column="13" />
+        <state relative-caret-position="-116" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/month_4/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="63" column="121" selection-start-line="63" selection-start-column="121" selection-end-line="63" selection-end-column="121" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/month_4/event.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="740">
+          <caret line="100" column="117" selection-start-line="100" selection-start-column="117" selection-end-line="100" selection-end-column="117" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/month_4/m/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="26" column="140" selection-start-line="26" selection-start-column="140" selection-end-line="26" selection-end-column="140" />
         </state>
       </provider>
     </entry>
