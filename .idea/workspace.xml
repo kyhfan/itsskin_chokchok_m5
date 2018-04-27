@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="916e13ee-4180-47e8-bf56-0f33f8cca72e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/month_4/event.php" beforeDir="false" afterPath="$PROJECT_DIR$/month_4/event.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/month_4/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/month_4/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/month_4/m/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/month_4/m/css/common.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/month_4/m/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/month_4/m/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/m/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/m/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/m/images/section_tvc_shadow.png" beforeDir="false" afterPath="$PROJECT_DIR$/m/images/section_tvc_shadow.png" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,15 +30,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="726">
-              <caret line="85" column="14" lean-forward="true" selection-start-line="67" selection-start-column="8" selection-end-line="85" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="event.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/month_4/event.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -62,8 +51,17 @@
       <file leaf-file-name="common.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/common.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1207">
+            <state relative-caret-position="-1318">
               <caret line="108" column="14" selection-start-line="108" selection-start-column="14" selection-end-line="108" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/m/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="353">
+              <caret line="113" column="14" selection-start-line="113" selection-start-column="14" selection-end-line="113" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -95,7 +93,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/month_4/m/header.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="416">
@@ -115,6 +113,7 @@
       <find>#header .menu-layer</find>
       <find>#header .menu-layer ul.list li a</find>
       <find>close_intro</find>
+      <find>sha</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -132,6 +131,7 @@
         <option value="$PROJECT_DIR$/month_4/index.php" />
         <option value="$PROJECT_DIR$/month_4/event.php" />
         <option value="$PROJECT_DIR$/month_4/m/header.php" />
+        <option value="$PROJECT_DIR$/m/css/style.css" />
       </list>
     </option>
   </component>
@@ -253,12 +253,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1524813897983</updated>
-      <workItem from="1524813899234" duration="10773000" />
+      <workItem from="1524813899234" duration="10907000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10773000" />
+    <option name="totallyTimeSpent" value="10907000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1177" extended-state="6" />
@@ -294,13 +294,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/m/index_.html">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/m/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/m/css/common.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -351,13 +344,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/common.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1207">
-          <caret line="108" column="14" selection-start-line="108" selection-start-column="14" selection-end-line="108" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/month_4/css/common.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="960">
@@ -402,6 +388,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
           <caret line="26" column="140" selection-start-line="26" selection-start-column="140" selection-end-line="26" selection-end-column="140" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1318">
+          <caret line="108" column="14" selection-start-line="108" selection-start-column="14" selection-end-line="108" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/m/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="113" column="14" selection-start-line="113" selection-start-column="14" selection-end-line="113" selection-end-column="14" />
         </state>
       </provider>
     </entry>
