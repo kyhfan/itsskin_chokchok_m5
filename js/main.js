@@ -60,7 +60,8 @@ $(function(){
 					$("#agree2_btn").css("background","url(./images/popup/popup_input_agree_on.png) center no-repeat");
 				}
 
-				popup.open(popupId, dynamicName)
+				popup.open(popupId, dynamicName);
+				alert("1122");
 			});
 			$doc.on('click', '.btn-close', function(e) {
 				var $target = $(this).closest('.popup');
@@ -68,22 +69,27 @@ $(function(){
 				// console.log($target);
 				popup.close($target);
 			});
+			$doc.on('click', '.btn-close2', function(e) {
+				var $target = $(this).closest('.popup');
+				e.preventDefault();
+				// console.log($target);
+				popup.close($target);
+			});
 		},
 		open: function(popupId, dn) {
-
 			var $popup = $(popupId),
 				$wrap = $popup.parent();
 
-				if (popupId == "#popup-agree1" || popupId == "#popup-agree2"){
-					popup.close($("#popup-input"));
-				}
+			if (popupId == "#popup-agree1" || popupId == "#popup-agree2"){
+				popup.close($("#popup-input"));
+			}
 
-				if (!$wrap.hasClass('popup-wrap')){
+			if (!$wrap.hasClass('popup-wrap')){
 				$popup.wrap('<div class="popup-wrap"></div>');
 				$wrap = $popup.parent();
 				$wrap.prepend('<span class="popup-align"></span>');
 			}
-			
+
 			if($popup.length) {
 				//						팝업 오픈
 				$html.addClass('popup-opened');
@@ -93,7 +99,6 @@ $(function(){
 				// 	console.log(dn);
 				// }
 			}
-
 		},
 		close: function($target) {
 			console.log("close");
@@ -261,23 +266,11 @@ $(function(){
 		{
 			popup.open("#popup-input");
 		}else{
-			alert("오답입니다 영상을 다시 확인 후 입력해주세요!");
+			// alert("오답입니다 영상을 다시 확인 후 입력해주세요!");
+			popup.open("#popup-wrong");
 			$(".blank1").val("");
-			return false;
+			// return false;
 		}
-    //     var i = 0;
-    //    $('#sub-input-wrap input').each(function() {
-    //        if("촉" != $(this).val()) {
-    //            alert("오답입니다 영상을 다시 확인 후 입력해주세요!");
-    //            i = 0;
-    //            return false;
-    //        }else{
-    //            i++;
-    //        }
-    //    });
-    //    if(i==7) {
-	// 	   popup.open("#popup-input");
-    //    }
     });
 
 	$(".input-submit-btn").on("click", function(){

@@ -455,4 +455,24 @@ html.popup-opened {
 	font-weight: 600;
 	letter-spacing: -0.75px;
 }
+.popup.wrong {
+	height: 392px;
+	/* display: none; */
+}
+.popup.wrong > .inner {
+	height: 100%;
+	padding: 61px 0 78px;
+}
+.popup.wrong .wrong-wrap {
+	text-align: center;
+}
+.popup.wrong .wrong-wrap .wrong-area{
+	margin-bottom: 38px;
+}
+.popup.wrong .wrong-wrap .confirm-btn{
+	background: url(../images/popup/popup_wrong_btn.png) center no-repeat;
+	width: 201px;
+	height: 66px;
+}
+
 /* popup */
