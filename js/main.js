@@ -202,7 +202,7 @@ $(function(){
 			// console.log(target.data("share-target"));
 			if (target.data("share-target") == "fb")
 			{
-				var newWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent('http://www.minivertising-test.com/index.php?media=fb'),'sharer','toolbar=0,status=0,width=600,height=325');
+				var newWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent('http://routine.itsskin.com/index.php?media=fb'),'sharer','toolbar=0,status=0,width=600,height=325');
 
 				$.ajax({
 					type   : "POST",
@@ -216,7 +216,7 @@ $(function(){
 	
 			} else if (target.data("share-target") == "ks") {
 				Kakao.Story.share({
-					url: 'http://www.minivertising-test.com/index.php?media=ks'
+					url: 'http://routine.itsskin.com/index.php?media=ks'
 				});
 				$.ajax({
 					type   : "POST",
@@ -229,7 +229,7 @@ $(function(){
 				});
 	
 			}else{
-				var newWindow = window.open('http://blog.naver.com/LinkShare.nhn?url=http://www.minivertising-test.com/index.php?media=blog','sharer','toolbar=0,status=0,width=600,height=325');
+				var newWindow = window.open('http://blog.naver.com/LinkShare.nhn?url=http://routine.itsskin.com/index.php?media=blog','sharer','toolbar=0,status=0,width=600,height=325');
 				$.ajax({
 					type   : "POST",
 					async  : false,

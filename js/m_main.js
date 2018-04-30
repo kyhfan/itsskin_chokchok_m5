@@ -260,7 +260,7 @@ var agree2 	= "N";
 			// 공유 로직 들어 가야 함
 			if (target == "fb")
 			{
-				var newWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent('http://www.minivertising-test.com/index.php'),'sharer','toolbar=0,status=0,width=600,height=325');
+				var newWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent('http://routine.itsskin.com/index.php'),'sharer','toolbar=0,status=0,width=600,height=325');
 
 				$.ajax({
 					type   : "POST",
@@ -274,7 +274,7 @@ var agree2 	= "N";
 	
 			} else if (target == "ks") {
 				Kakao.Story.share({
-					url: 'http://www.minivertising-test.com/index.php?media=ks'
+					url: 'http://routine.itsskin.com/index.php?media=ks'
 				});
 				$.ajax({
 					type   : "POST",
@@ -290,13 +290,13 @@ var agree2 	= "N";
 				Kakao.Link.sendTalkLink({
 					label: '[잇츠스킨] 이런 수분 처음일 걸?\r\n혜리의 촉촉촉촉촉촉촉한 영상 확인하고\r\n잇츠스킨 하이드라 루틴 세럼 선물받자!',
 					image: {
-						src: 'http://www.minivertising-test.com/images/share_img.jpg',
+						src: 'http://routine.itsskin.com/images/share_img.jpg',
 						width: '1200',
 						height: '630'
 					},
 					webButton: {
 						text: "잇츠스킨",
-						url: 'http://www.minivertising-test.com/index.php?media=kt' // 앱 설정의 웹 플랫폼에 등록한 도메인의 URL이어야 합니다.
+						url: 'http://routine.itsskin.com/index.php?media=kt' // 앱 설정의 웹 플랫폼에 등록한 도메인의 URL이어야 합니다.
 					}
 				});
 				$.ajax({
@@ -309,7 +309,7 @@ var agree2 	= "N";
 					}
 				});
 			}else{
-				var newWindow = window.open('http://m.blog.naver.com/LinkShare.nhn?url=http://www.minivertising-test.com/index.php?media=blog','sharer','toolbar=0,status=0,width=600,height=325');
+				var newWindow = window.open('http://m.blog.naver.com/LinkShare.nhn?url=http://routine.itsskin.com/index.php?media=blog','sharer','toolbar=0,status=0,width=600,height=325');
 				$.ajax({
 					type   : "POST",
 					async  : false,
