@@ -42,12 +42,13 @@
     <script src="../js/m_main.js"></script>
 </head>
 <body>
+<script src='http://vtag15.midas-i.com/vat-tag?cmp_no=3565&depth=56'></script>
 <div class="page-wrap">
     <div id="header">
         <div class="inner">
             <div class="wrapper">
                 <h1 class="logo">
-                    <a href="http://www.itsskin.com/" target="_blank">
+                    <a href="http://www.itsskin.com/" target="_blank" onclick="event1('57');">
                         <img src="./images/logo.png" alt="it's skin">
                     </a>
                 </h1>
@@ -66,23 +67,23 @@
                 <span class="line right"></span>
             </a>
             <ul class="list">
-                <li class="is-active"><a href="index.php?pTarget=goMain" data-slide="goMain">It's My 세럼</a></li>
-                <li class="sectionMove"><a href="index.php?pTarget=goFill" data-slide="goFill">빈칸 이벤트</a></li>
+                <li class="is-active"><a href="index.php?pTarget=goMain" data-slide="goMain" onclick="event1('58');">It's My 세럼</a></li>
+                <li class="sectionMove"><a href="index.php?pTarget=goFill" data-slide="goFill" onclick="event1('60');">빈칸 이벤트</a></li>
                 <!-- <li><a href="#" onclick="alert('준비중입니다')">QUIZ SHOW</a></li> -->
-                <li class="sectionMove"><a href="index.php?pTarget=goRoutin" data-slide="goRoutin">나만의 루틴 확인</a></li>
-                <li><a href="../month_4/m/event.php" target="_blank">지난 이벤트</a></li>
+                <li class="sectionMove"><a href="index.php?pTarget=goRoutin" data-slide="goRoutin" onclick="event1('59');">나만의 루틴 확인</a></li>
+                <li><a href="../month_4/m/event.php" target="_blank" onclick="event1('61');">지난 이벤트</a></li>
             </ul>
             <div class="share-list">
-                <a href="javascript:void(0)" data-share-target="fb">
+                <a href="javascript:void(0)" data-share-target="fb" onclick="event1('62');">
                     <img src="./images/share_fb.png" alt="페이스북 공유">
                 </a>
-                <a href="javascript:void(0)" data-share-target="ks">
+                <a href="javascript:void(0)" data-share-target="ks" onclick="event1('63');">
                     <img src="./images/share_ks.png" alt="카카오스토리 공유">
                 </a>
                 <a href="javascript:void(0)" data-share-target="kt">
                     <img src="./images/share_kt.png" alt="카카오톡 공유">
                 </a>
-                <a href="javascript:void(0)" data-share-target="blog">
+                <a href="javascript:void(0)" data-share-target="blog" onclick="event1('64');">
                     <img src="./images/share_blog.png" alt="블로그 공유">
                 </a>
             </div>
@@ -103,12 +104,12 @@
             <div class="down-nav">
                 <div class="textB">
                     <img src="./images/section_main_nav_text.png" alt="촉촉촉촉촉촉촉! 영상 보고 하이드라 루틴세럼 선물받자!">
-                    <button type="button">
+                    <button type="button" onclick="event1('65');">
                         GO!
                     </button>
                 </div>
                 <div class="capture">
-                    <button type="button">
+                    <button type="button" onclick="event1('65');">
                         <img src="./images/section_main_nav_capture.png">
                     </button>
                 </div>
@@ -135,7 +136,7 @@
                 <div class="text-wrap" id="sub-input-wrap">
                     <input type="text" class="blank1" maxlength="1" onkeyup="chk_strlen(this,2,2)">
                 </div>
-                <button type="button" class="input-submit" id="sub-submit">
+                <button type="button" class="input-submit" id="sub-submit" onclick="event1('67');">
                     입력 완료
                 </button>
             </div>
