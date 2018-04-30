@@ -27,8 +27,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta property="og:type" content="website" />
     <meta property="og:title" content="[잇츠스킨] 이런 수분은 처음일걸?" />
-    <meta property="og:url" content="http://www.minivertising-test.com" />
-    <meta property="og:image" content="http://www.minivertising-test.com/images/share_img.jpg" />
+    <meta property="og:url" content="http://routine.itsskin.com" />
+    <meta property="og:image" content="http://routine.itsskin.com/images/share_img.jpg" />
     <meta property="og:description" content="혜리의 촉촉촉촉촉촉촉한 영상 확인하고 잇츠스킨 하이드라 루틴 세럼 선물받자!" />
     <title>It's skin</title>
     <link type="image/icon" rel="shortcut icon" href="http://routine.itsskin.com/images/hydra_favi.ico" />
@@ -104,7 +104,7 @@
             <div class="down-nav">
                 <div class="textB">
                     <img src="./images/section_main_nav_text.png" alt="촉촉촉촉촉촉촉! 영상 보고 하이드라 루틴세럼 선물받자!">
-                    <button type="button">
+                    <button type="button" onclick="event1('70');">
                         GO!
                     </button>
                 </div>
