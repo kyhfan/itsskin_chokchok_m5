@@ -336,8 +336,10 @@ include_once "./popup.html";
         var i = 0;
        $('#sub-input-wrap input').each(function() {
            if("7" != $(this).val()) {
-               alert("오답입니다 영상을 다시 확인 후 입력해주세요!");
+               // alert("오답입니다 영상을 다시 확인 후 입력해주세요!");
+               its_month5.popup.open("#popup-retry");
                i = 0;
+               $(this).val("");
                return false;
            }else{
                i++;
