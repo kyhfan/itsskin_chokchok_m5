@@ -46,12 +46,13 @@
 
 </head>
 <body>
+    <script src='http://vtag15.midas-i.com/vat-tag?cmp_no=3565&depth=56'></script>
     <div class="page-wrap">
         <div id="header">
             <div class="inner">
                 <div class="wrapper">
 					<h1 class="logo">
-						<a href="http://www.itsskin.com" target="_blank" onclick="event1(2)">
+						<a href="http://www.itsskin.com" target="_blank" onclick="event1(57)">
 							<img src="./images/logo.png" alt="it's skin">
 						</a>
                     </h1>
@@ -71,17 +72,17 @@
             </div>
             <div class="navi-menu">
                 <ul>
-                    <li class="is-active"><a href="index.php?pTarget=goMain" data-slide="goMain">It's My 세럼</a></li>
-                    <li><a href="index.php?pTarget=goFill" data-slide="goFill">빈칸 이벤트</a></li>
+                    <li class="is-active"><a href="index.php?pTarget=goMain" data-slide="goMain" onclick="event1(58)">It's My 세럼</a></li>
+                    <li><a href="index.php?pTarget=goFill" data-slide="goFill" onclick="event1(60)">빈칸 이벤트</a></li>
                     <!-- <li>QUIZ SHOW</li> -->
-                    <li><a href="index.php?pTarget=goRoutin" data-slide="goRoutin">나만의 루틴 확인</a></li>
-                    <li><a href="./month_4/event.php" target="_blank">지난 이벤트</a></li>
+                    <li><a href="index.php?pTarget=goRoutin" data-slide="goRoutin" onclick="event1(59)">나만의 루틴 확인</a></li>
+                    <li><a href="./month_4/event.php" target="_blank" onclick="event1(61)">지난 이벤트</a></li>
                 </ul>
             </div>
             <div class="share-group">
-                <button type="button" class="share-fb" data-share-target="fb"></button>
-                <button type="button" class="share-ks" data-share-target="ks"></button>
-                <button type="button" class="share-blog" data-share-target="blog"></button>
+                <button type="button" class="share-fb" data-share-target="fb" onclick="event1(62)"></button>
+                <button type="button" class="share-ks" data-share-target="ks" onclick="event1(63)"></button>
+                <button type="button" class="share-blog" data-share-target="blog" onclick="event1(64)"></button>
             </div>
         </div>
         <div class="content main">
@@ -93,7 +94,7 @@
                         <img src="./images/section1_cali.png" alt="It's my skin">
                     </div>
                     <div class="april-banner">
-                        <a href="javascript:void(0)"><img src="./images/section1_april_winner.png" alt="4월 혜리 영상 공유 이벤트"></a>
+                        <a href="javascript:void(0)" onclick="event1(65)"><img src="./images/section1_april_winner.png" alt="4월 혜리 영상 공유 이벤트"></a>
                     </div>
                     <div class="water-group">
                         <div class="water-drop _1">
@@ -175,7 +176,7 @@
                         </div>
                     </div>
                     <!-- <button class="quiz-btn" data-popup-target="#popup-input"></button> -->
-                    <button type="button" class="quiz-btn" id="sub-submit"></button>
+                    <button type="button" class="quiz-btn" id="sub-submit" onclick="event1(67)"></button>
                 </div>
                 <div class="tab-button-area">
                     <button type="button" class="tab _1 is-active" data-tap-target="1">
