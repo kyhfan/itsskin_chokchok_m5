@@ -672,20 +672,20 @@ function chk_strlen(obj, maxByte, num) {
 }
 
 function event1(depth){
-	console.log(depth);
-	// $.ajax({
-	// 	url : "http://mobile.midas-i.com/roianal.mezzo/tracking?cmp_no=1859&depth=" + depth,
-	// 	dataType : "jsonp",
-	// 	async : true, 
-	// 	timeout: 500,
-	// 	success: function(data) {
-	// 		// console.log("1111");
-	// 				// location.href=url;
-	// 	}, 
-	// 	error : function(e) {
-	// 		// console.log(e);
-	// 				// location.href=url;
-	// 	}
-	// });
-	// return false;
+	// console.log(depth);
+	$.ajax({
+		url : "http://mobile.midas-i.com/roianal.mezzo/tracking?cmp_no=1859&depth=" + depth,
+		dataType : "jsonp",
+		async : true,
+		timeout: 500,
+		success: function(data) {
+			// console.log("1111");
+					// location.href=url;
+		},
+		error : function(e) {
+			// console.log(e);
+					// location.href=url;
+		}
+	});
+	return false;
 }
