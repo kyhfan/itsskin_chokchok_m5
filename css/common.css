@@ -49,6 +49,7 @@
 html {
 	font-size: 16px;
 	-webkit-tap-highlight-color: transparent;
+	overflow-y: auto;
 }
 html, body {
 	height: 100%;
@@ -107,8 +108,7 @@ html.popup-opened {
 	background: rgb(19, 23, 26);
 	background: rgba(19, 23, 26, 0.26);
 	text-align: center;
-	-webkit-transition: all 0.15s ease-out;
-	transition: all 0.15s ease-out;
+
 	/*
 	white-space: nowrap;
 	word-break: normal;
@@ -119,6 +119,9 @@ html.popup-opened {
 	visibility: visible;
 	opacity: 1;
 	z-index: 1000;
+	-webkit-transition: opacity 0.1s ease-out;
+	transition: opacity 0.1s ease-out;
+
 }
 .popup-wrap > .popup-align {
 	display: inline-block;
@@ -147,11 +150,11 @@ html.popup-opened {
 	background: url(../images/popup/popup_waterdrop.png) no-repeat;
 	background-size: cover;
 	transition: all 0.34s ease 0.1s;
-	opacity: 0;
+	/*opacity: 0;*/
 	transform: scale(0);
 }
 .popup-wrap.is-opened .popup::before {
-	opacity: 1;
+	/*opacity: 1;*/
 	transform: scale(1);
 
 }

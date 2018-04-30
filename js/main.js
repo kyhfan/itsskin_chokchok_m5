@@ -42,6 +42,7 @@ $(function(){
     });
 	
 	var popup = {
+		scrollTop: 0,
 		bind: function() {
 			$doc.on('click', '[data-popup-target]', function() {
 				console.log("open");
@@ -74,25 +75,36 @@ $(function(){
 			var $popup = $(popupId),
 				$wrap = $popup.parent();
 
-				if (popupId == "#popup-agree1" || popupId == "#popup-agree2"){
-					popup.close($("#popup-input"));
-				}
-
-				if (!$wrap.hasClass('popup-wrap')){
-				$popup.wrap('<div class="popup-wrap"></div>');
-				$wrap = $popup.parent();
-				$wrap.prepend('<span class="popup-align"></span>');
+			if (popupId == "#popup-agree1" || popupId == "#popup-agree2"){
+				popup.close($("#popup-input"));
 			}
+            //
+			// if (!$wrap.hasClass('popup-wrap')){
+			// 	$popup.wrap('<div class="popup-wrap"></div>');
+			// 	$wrap = $popup.parent();
+			// 	$wrap.prepend('<span class="popup-align"></span>');
+			// }
 			
 			if($popup.length) {
 				//						팝업 오픈
-				$html.addClass('popup-opened');
-				$wrap.addClass('is-opened');
+
 				//						요일별 처리
 				// if(dn.length) {
 				// 	console.log(dn);
 				// }
+                if (!$html.hasClass('popup-opened')){
+                    // popup.scrollTop = $win.scrollTop();
+                    // $('html').scrollTop(popup.scrollTop);
+                    setTimeout(function() {
+                        $wrap.addClass('is-opened');
+                        $html.addClass('popup-opened');
+                        // $win.scrollTop(popup.scrollTop);
+
+					},10);
+                    //
+                }
 			}
+
 
 		},
 		close: function($target) {
