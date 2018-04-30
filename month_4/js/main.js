@@ -13,6 +13,34 @@ $(function(){
 	var week	= ""; 
 	var agree1 	= "N";
 	var agree2 	= "N";
+
+
+    $(".navi-menu ul li a").on("click", function(e){
+        e.preventDefault();
+        var $this = $(this);
+        $('html').removeClass('menu-opened');
+
+        $('.c-header').removeClass('c-header--active');
+        // isOpened = false;
+        var url = $this.attr('href');
+        setTimeout(function(){
+            // if(!$this.parent().hasClass('is-active')) {
+            if($('.page-wrap > .content').hasClass('main') && ($this.data('slide'))) {
+                // 서브페이지 분기 필요
+                var target = $this.data('slide');
+                var scTop = $('#'+target).offset().top;
+
+                if (target == "goRoutin")
+                    $('html, body').animate({scrollTop:scTop}, 500);
+                else
+                    $('html, body').animate({scrollTop:scTop}, 500);
+
+            }else{
+                location.href = url;
+            }
+
+        }, 100);
+    });
 	
 	var eventPage = {
 		bind: function() {

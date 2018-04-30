@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="916e13ee-4180-47e8-bf56-0f33f8cca72e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/month_4/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/month_4/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/month_4/js/m_main.js" beforeDir="false" afterPath="$PROJECT_DIR$/month_4/js/m_main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/month_4/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/month_4/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/month_4/m/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/month_4/m/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/month_4/m/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/month_4/m/index.php" afterDir="false" />
     </list>
@@ -25,20 +26,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/month_4/css/main.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
-              <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/month_4/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5072">
-              <caret line="317" column="12" selection-start-line="317" selection-start-column="12" selection-end-line="317" selection-end-column="12" />
+            <state relative-caret-position="721">
+              <caret line="635" column="49" selection-start-line="635" selection-start-column="49" selection-end-line="635" selection-end-column="49" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#a#0;n#li#3;n#ul#0;n#div#1;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
               </folding>
@@ -49,8 +41,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/month_4/m/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="338" column="53" selection-start-line="338" selection-start-column="53" selection-end-line="338" selection-end-column="53" />
+            <state relative-caret-position="750">
+              <caret line="344" column="32" lean-forward="true" selection-start-line="344" selection-start-column="32" selection-end-line="344" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -67,8 +59,8 @@
       <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/month_4/m/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="26" column="72" selection-start-line="26" selection-start-column="72" selection-end-line="26" selection-end-column="72" />
+            <state relative-caret-position="368">
+              <caret line="23" column="95" selection-start-line="23" selection-start-column="95" selection-end-line="23" selection-end-column="95" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#a#0;n#li#3;n#ul#0;n#div#1;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -76,11 +68,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="m_main.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="m_main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/month_4/js/m_main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="466" column="29" selection-start-line="466" selection-start-column="29" selection-end-line="466" selection-end-column="29" />
+            <state relative-caret-position="713">
+              <caret line="492" column="7" lean-forward="true" selection-start-line="463" selection-start-column="4" selection-end-line="492" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/month_4/js/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="486">
+              <caret line="33" column="60" selection-start-line="33" selection-start-column="60" selection-end-line="33" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -88,8 +89,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="710">
-              <caret line="441" selection-start-line="441" selection-end-line="441" />
+            <state relative-caret-position="858">
+              <caret line="459" column="16" lean-forward="true" selection-start-line="456" selection-start-column="8" selection-end-line="459" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -106,8 +107,8 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3279">
-              <caret line="204" column="29" selection-start-line="204" selection-start-column="23" selection-end-line="204" selection-end-column="29" />
+            <state relative-caret-position="656">
+              <caret line="41" column="7" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="41" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -131,6 +132,8 @@
       <find>event</find>
       <find>window</find>
       <find>goMain</find>
+      <find>scroll</find>
+      <find>gR</find>
       <find>goRoutin</find>
     </findStrings>
   </component>
@@ -140,7 +143,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/month_4/js/main.js" />
         <option value="$PROJECT_DIR$/month_4/m/css/common.css" />
         <option value="$PROJECT_DIR$/month_4/event.php" />
         <option value="$PROJECT_DIR$/m/css/style.css" />
@@ -150,13 +152,14 @@
         <option value="$PROJECT_DIR$/m/index.php" />
         <option value="$PROJECT_DIR$/m/popup.html" />
         <option value="$PROJECT_DIR$/month_4/css/main.css" />
-        <option value="$PROJECT_DIR$/month_4/index.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/m/header.php" />
         <option value="$PROJECT_DIR$/js/m_main.js" />
-        <option value="$PROJECT_DIR$/month_4/m/index.php" />
         <option value="$PROJECT_DIR$/month_4/m/header.php" />
         <option value="$PROJECT_DIR$/month_4/js/m_main.js" />
+        <option value="$PROJECT_DIR$/month_4/m/index.php" />
+        <option value="$PROJECT_DIR$/month_4/index.php" />
+        <option value="$PROJECT_DIR$/month_4/js/main.js" />
       </list>
     </option>
   </component>
@@ -278,12 +281,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1524813897983</updated>
-      <workItem from="1524813899234" duration="23514000" />
+      <workItem from="1524813899234" duration="24792000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23514000" />
+    <option name="totallyTimeSpent" value="24792000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1177" extended-state="6" />
@@ -340,13 +343,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/m/index_.html">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/month_4/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="738">
-          <caret line="387" column="7" selection-start-line="387" selection-start-column="7" selection-end-line="387" selection-end-column="7" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -414,30 +410,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3279">
-          <caret line="204" column="29" selection-start-line="204" selection-start-column="23" selection-end-line="204" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="710">
-          <caret line="441" selection-start-line="441" selection-end-line="441" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/month_4/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5072">
-          <caret line="317" column="12" selection-start-line="317" selection-start-column="12" selection-end-line="317" selection-end-column="12" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#a#0;n#li#3;n#ul#0;n#div#1;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/m/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -459,27 +431,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/month_4/m/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="338" column="53" selection-start-line="338" selection-start-column="53" selection-end-line="338" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/month_4/m/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="26" column="72" selection-start-line="26" selection-start-column="72" selection-end-line="26" selection-end-column="72" />
+        <state relative-caret-position="368">
+          <caret line="23" column="95" selection-start-line="23" selection-start-column="95" selection-end-line="23" selection-end-column="95" />
           <folding>
             <element signature="n#style#0;n#img#0;n#a#0;n#li#3;n#ul#0;n#div#1;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="656">
+          <caret line="41" column="7" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="41" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/month_4/m/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="344" column="32" lean-forward="true" selection-start-line="344" selection-start-column="32" selection-end-line="344" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="858">
+          <caret line="459" column="16" lean-forward="true" selection-start-line="456" selection-start-column="8" selection-end-line="459" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/month_4/js/m_main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="466" column="29" selection-start-line="466" selection-start-column="29" selection-end-line="466" selection-end-column="29" />
+        <state relative-caret-position="713">
+          <caret line="492" column="7" lean-forward="true" selection-start-line="463" selection-start-column="4" selection-end-line="492" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/month_4/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="721">
+          <caret line="635" column="49" selection-start-line="635" selection-start-column="49" selection-end-line="635" selection-end-column="49" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#a#0;n#li#3;n#ul#0;n#div#1;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/month_4/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="33" column="60" selection-start-line="33" selection-start-column="60" selection-end-line="33" selection-end-column="60" />
         </state>
       </provider>
     </entry>

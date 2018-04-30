@@ -464,7 +464,6 @@ $(function(){
 	$(".menu-layer .list li a").on("click", function(e){
 		e.preventDefault();
         var $this = $(this);
-        console.log($(this));
 		$('html').removeClass('menu-opened');
 		$('.gnb').removeClass('is-active');
 		var closeTimeline = new TimelineMax();
@@ -478,14 +477,14 @@ $(function(){
 
 		$('.c-header').removeClass('c-header--active');
 		isOpened = false;
-		var url = $(this).attr('href');
+		var url = $this.attr('href');
 		setTimeout(function(){
-			if($('.content').hasClass('main') && (!$(this).hasClass('pageMove'))) {
+			if($('.content').hasClass('main') && $this.hasClass('sectionMove')) {
 				// var scTop = $('.product-info').offset().top;
 				// $('html, body').animate({scrollTop:scTop - 60}, 500);
                 var target = $this.data('slide');
                 var scTop = $('#'+target).offset().top;
-                $('html, body').animate({scrollTop:scTop+1}, 500);
+                $('html, body').animate({scrollTop:scTop-60}, 500);
 			}else{
 				location.href = url;
 			}	

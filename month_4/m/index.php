@@ -317,7 +317,7 @@
 
 			if($.QueryString['pTarget']) {
 				if($.QueryString['pTarget'] == "goRoutin") {
-					$('html, body').animate({scrollTop:$('.product-info').offset().top - 60}, 500);
+					$('html, body').animate({scrollTop:$('.product-info').offset().top-30}, 500);
 				}
 			}
 			
@@ -336,14 +336,13 @@
 					$('#header').removeClass('header--scroll');
 				}
 
-                if (scTop<$('#goRoutin').offset().top) {
+                if (scTop<$('#goRoutin').offset().top-70) {
                     currentSection = "goMain";
                 } else {
                     currentSection = "goRoutin";
                 }
 
                 setTimeout(function() {
-                    console.log(currentSection);
                     $('.menu-layer .list li').removeClass('is-active');
                     $("[data-slide="+currentSection+"]").parent().addClass('is-active');
                 }, 100);
