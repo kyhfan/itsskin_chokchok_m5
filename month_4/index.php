@@ -308,10 +308,10 @@ include_once "./head.php";
 		</div>
 	</div>
 <!--	<div class="skip_layer">-->
-<!--		<!--			<div class="intro_cover"></div>-->-->
-<!--		<!--			<div class="intro_movie">-->-->
+<!--		<div class="intro_cover"></div>-->
+<!--		<div class="intro_movie">-->
 <!--		<iframe allowfullscreen="1" src="https://www.youtube.com/embed/SEsO3gIrnbk?controls=0&loop=1&playlist=SEsO3gIrnbk&modestbranding=1&showinfo=0&wmode=opaque&enablejsapi=1&rel=0&autoplay=1" frameborder="0" id="player" class="player"></iframe>-->
-<!--		<!--			</div>-->-->
+<!--		</div>-->
 <!--		<div id="skip_cursor">-->
 <!--			<img src="./images/skip.png" style="position:absolute" alt="skip">-->
 <!--		</div>-->
