@@ -36,7 +36,7 @@
                 </thead>
                 <tbody>
 <?php
-	$daily_date_query	= "SELECT tracking_date FROM tracking_info WHERE 1 AND tracking_date > '2018-04-30 18' Group by substr(tracking_date,1,10) ORDER BY tracking_date DESC";
+	$daily_date_query	= "SELECT tracking_date FROM tracking_info WHERE 1 AND tracking_date > '2018-04-30' Group by substr(tracking_date,1,10) ORDER BY tracking_date DESC";
 	$date_res			= mysqli_query($my_db, $daily_date_query);
 	while($date_daily_data = mysqli_fetch_array($date_res))
 	{
