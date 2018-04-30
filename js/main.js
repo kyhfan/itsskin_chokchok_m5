@@ -109,18 +109,15 @@ $(function(){
                     //
                 }
 			}
-
+			$("#ytplayer").attr("src","");
 
 		},
 		close: function($target) {
-			console.log("close");
+			$("#ytplayer").attr("src","https://www.youtube.com/embed/SEsO3gIrnbk?controls=0&loop=1&playlist=SEsO3gIrnbk&modestbranding=1&showinfo=0&wmode=opaque&enablejsapi=1&rel=0&autoplay=0");
 			$target.find('iframe').attr('src', '');
 
 			$target.closest('.popup-wrap').removeClass('is-opened');
 			$html.removeClass('popup-opened');
-			// $body.css("height","100%");
-			// $html.css("height","");
-			// $body.css("height","");
 		}
 	}
 	popup.bind();
