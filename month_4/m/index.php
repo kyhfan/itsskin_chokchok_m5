@@ -26,7 +26,7 @@
 
 			<div class="content main">
 				<a href="javascript:void(0)" data-popup-target="#popup-share"></a>
-				<section class="main-visual skrollable skrollable-between" data-0="background-position: 50% 0px" data-1000="background-position: 50% -100px">
+				<section class="main-visual skrollable skrollable-between" data-0="background-position: 50% 0px" data-1000="background-position: 50% -100px" id="goMain">
 					<div class="mini-nav">
 						<a href="event.php" onclick="event1(6)">
 							<img src="./images/mini_fixed.png" alt="매일 다른 내 피부 혜리 영상 공유하고 선물받기!">
@@ -115,7 +115,7 @@
 					</div>
 -->
 				</section>
-				<section class="product-info">
+				<section class="product-info" id="goRoutin">
 					<div class="product-wrapper">
 						<div class="tap-area">
 							<button type="button" class="tap _01 is-active" data-tap-target="1">
@@ -270,6 +270,7 @@
 			</div>
 		</div>
 		<script type="text/javascript">
+            var currentSection = "goMain";
 			// 쿠키 생성
 			function setCookie2(cName, cValue, cDay){
 				var expire = new Date();
@@ -331,17 +332,30 @@
 				var scTop = $(this).scrollTop();
 				if ( scTop > 20 ){
 					$('#header').addClass('header--scroll');
-				}else {
+				} else {
 					$('#header').removeClass('header--scroll');
 				}
-			});
 
-			var scTop = $(window).scrollTop();
-			if ( scTop > 20 ){
-				$('#header').addClass('header--scroll');
-			}else {
-				$('#header').removeClass('header--scroll');
-			}
+                if (scTop<$('#goRoutin').offset().top) {
+                    currentSection = "goMain";
+                } else {
+                    currentSection = "goRoutin";
+                }
+
+                setTimeout(function() {
+                    console.log(currentSection);
+                    $('.menu-layer .list li').removeClass('is-active');
+                    $("[data-slide="+currentSection+"]").parent().addClass('is-active');
+                }, 100);
+
+            });
+
+			// var scTop = $(window).scrollTop();
+			// if ( scTop > 20 ){
+			// 	$('#header').addClass('header--scroll');
+			// }else {
+			// 	$('#header').removeClass('header--scroll');
+			// }
 
 //			var s = skrollr.init({
 //				//		forceHeight: false,
