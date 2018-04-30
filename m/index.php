@@ -104,7 +104,7 @@
             <div class="down-nav">
                 <div class="textB">
                     <img src="./images/section_main_nav_text.png" alt="촉촉촉촉촉촉촉! 영상 보고 하이드라 루틴세럼 선물받자!">
-                    <button type="button">
+                    <button type="button" onclick="event1('70');">
                         GO!
                     </button>
                 </div>
