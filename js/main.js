@@ -62,7 +62,6 @@ $(function(){
 				}
 
 				popup.open(popupId, dynamicName);
-				alert("1122");
 			});
 			$doc.on('click', '.btn-close', function(e) {
 				var $target = $(this).closest('.popup');
