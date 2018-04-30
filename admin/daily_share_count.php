@@ -21,7 +21,7 @@
   <!-- Page Heading -->
     <div class="row">
       <div class="col-lg-12">
-        <h1 class="page-header">일자별 SNS 공유 버튼 클릭 수</h1>
+        <h1 class="page-header">4월 일자별 SNS 공유 버튼 클릭 수</h1>
       </div>
     </div>
       <!-- /.row -->
@@ -35,7 +35,7 @@
                 </thead>
                 <tbody>
 <?php
-	$daily_date_query	= "SELECT sns_regdate FROM share_info Group by substr(sns_regdate,1,10) order by sns_regdate desc";
+	$daily_date_query	= "SELECT sns_regdate FROM share_info WHERE 1 AND sns_regdate < '2018-04-30 18' Group by substr(sns_regdate,1,10) order by sns_regdate desc";
 	$date_res			= mysqli_query($my_db, $daily_date_query);
 	while($date_daily_data = mysqli_fetch_array($date_res))
 	{

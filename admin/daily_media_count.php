@@ -21,7 +21,7 @@
     <!-- Page Heading -->
       <div class="row">
         <div class="col-lg-12">
-          <h1 class="page-header">캠페인 참여자 수 PC / Mobile</h1>
+          <h1 class="page-header">4월 캠페인 참여자 수 PC / Mobile</h1>
         </div>
       </div>
       <!-- /.row -->

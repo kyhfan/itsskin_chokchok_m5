@@ -1,200 +1,114 @@
 <?php
 	// 설정파일
-	include_once "../config.belif";
+	include_once "../include/autoload.php";
 
+	$mnv_f = new mnv_function();
+	$my_db         = $mnv_f->Connect_MySQL();
+/*
+	if (isset($_SESSION['ss_mb_id']) == false)
+	{
+		//header('Location: index.php'); 
+		echo "<script>location.href='index.php'</script>"; 
+		exit; 
+	}
+*/
 	include "./head.php";
 ?>
+
 
 <div id="page-wrapper">
   <div class="container-fluid">
   <!-- Page Heading -->
     <div class="row">
       <div class="col-lg-12">
-        <h1 class="page-header">일자별 공유한 응모자 수</h1>
+        <h1 class="page-header">5월 일자별 SNS 공유 버튼 클릭 수</h1>
       </div>
     </div>
-    <!-- /.row -->
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="table-responsive">
-          <table id="entry_list" class="table table-hover">
-            <thead>
-              <tr>
-                <th rowspan="3">날짜</th>
-                <th colspan="7">메인에서 공유</th>
-                <th bgcolor="skyblue" colspan="7">이벤트 참여후 공유</th>
-                <th rowspan="3">합계</th>
-              </tr>
-              <tr>
-                <th colspan="3">PC</th>
-                <th colspan="4">MOBILE</th>
-                <th bgcolor="skyblue" colspan="3">PC</th>
-                <th bgcolor="skyblue" colspan="4">MOBILE</th>
-              </tr>
-              <tr>
-                <th>FB</th>
-                <th>KS</th>
-                <th>TW</th>
-                <th>FB</th>
-                <th>KS</th>
-                <th>TW</th>
-                <th>KT</th>
-                <th bgcolor="skyblue">FB</th>
-                <th bgcolor="skyblue">KS</th>
-                <th bgcolor="skyblue">TW</th>
-                <th bgcolor="skyblue">FB</th>
-                <th bgcolor="skyblue">KS</th>
-                <th bgcolor="skyblue">TW</th>
-                <th bgcolor="skyblue">KT</th>
-              </tr>
-            </thead>
-            <tbody>
-<?php 
-	$daily_date_query	= "SELECT sns_regdate FROM ".$_gl['share_info_table']." Group by substr(sns_regdate,1,10) order by sns_regdate desc";
-	$date_res			= mysqli_query($my_db, $daily_date_query);
-	
-	while ($date_data = @mysqli_fetch_array($date_res))
-	{
-		$daily_date		= substr($date_data['sns_regdate'],0,10);
-
-		unset($share_main_P_fb_count);
-		unset($share_main_P_ks_count);
-		unset($share_main_P_tw_count);
-		unset($share_main_M_fb_count);
-		unset($share_main_M_ks_count);
-		unset($share_main_M_tw_count);
-		unset($share_main_M_kt_count);
-
-		unset($share_nominee_P_fb_count);
-		unset($share_nominee_P_ks_count);
-		unset($share_nominee_P_tw_count);
-		unset($share_nominee_M_fb_count);
-		unset($share_nominee_M_ks_count);
-		unset($share_nominee_M_tw_count);
-		unset($share_nominee_M_kt_count);
-
-		unset($share_vote_P_fb_count);
-		unset($share_vote_P_ks_count);
-		unset($share_vote_P_tw_count);
-		unset($share_vote_M_fb_count);
-		unset($share_vote_M_ks_count);
-		unset($share_vote_M_tw_count);
-		unset($share_vote_M_kt_count);
-
-		unset($share_end_P_fb_count);
-		unset($share_end_P_ks_count);
-		unset($share_end_P_tw_count);
-		unset($share_end_M_fb_count);
-		unset($share_end_M_ks_count);
-		unset($share_end_M_tw_count);
-		unset($share_end_M_kt_count);
-
-
-		unset($total_count);
-		$share_main_P_fb_query		= "SELECT * FROM ".$_gl['share_info_table']." WHERE sns_regdate LIKE  '%".$daily_date."%' AND sns_flag='main' AND sns_media='fb' AND sns_gubun='PC'";
-		$share_main_P_fb_count		= mysqli_num_rows(mysqli_query($my_db, $share_main_P_fb_query));
-		$share_main_P_ks_query		= "SELECT * FROM ".$_gl['share_info_table']." WHERE sns_regdate LIKE  '%".$daily_date."%' AND sns_flag='main' AND sns_media='ks' AND sns_gubun='PC'";
-		$share_main_P_ks_count		= mysqli_num_rows(mysqli_query($my_db, $share_main_P_ks_query));
-		$share_main_P_tw_query		= "SELECT * FROM ".$_gl['share_info_table']." WHERE sns_regdate LIKE  '%".$daily_date."%' AND sns_flag='main' AND sns_media='tw' AND sns_gubun='PC'";
-		$share_main_P_tw_count		= mysqli_num_rows(mysqli_query($my_db, $share_main_P_tw_query));
-		$share_main_M_fb_query		= "SELECT * FROM ".$_gl['share_info_table']." WHERE sns_regdate LIKE  '%".$daily_date."%' AND sns_flag='main' AND sns_media='fb' AND sns_gubun='MOBILE'";
-		$share_main_M_fb_count		= mysqli_num_rows(mysqli_query($my_db, $share_main_M_fb_query));
-		$share_main_M_ks_query		= "SELECT * FROM ".$_gl['share_info_table']." WHERE sns_regdate LIKE  '%".$daily_date."%' AND sns_flag='main' AND sns_media='ks' AND sns_gubun='MOBILE'";
-		$share_main_M_ks_count		= mysqli_num_rows(mysqli_query($my_db, $share_main_M_ks_query));
-		$share_main_M_tw_query		= "SELECT * FROM ".$_gl['share_info_table']." WHERE sns_regdate LIKE  '%".$daily_date."%' AND sns_flag='main' AND sns_media='tw' AND sns_gubun='MOBILE'";
-		$share_main_M_tw_count		= mysqli_num_rows(mysqli_query($my_db, $share_main_M_tw_query));
-		$share_main_M_kt_query		= "SELECT * FROM ".$_gl['share_info_table']." WHERE sns_regdate LIKE  '%".$daily_date."%' AND sns_flag='main' AND sns_media='kt' AND sns_gubun='MOBILE'";
-		$share_main_M_kt_count		= mysqli_num_rows(mysqli_query($my_db, $share_main_M_kt_query));
-
-		$share_nominee_P_fb_query		= "SELECT * FROM ".$_gl['share_info_table']." WHERE sns_regdate LIKE  '%".$daily_date."%' AND sns_flag='nominee' AND sns_media='fb' AND sns_gubun='PC'";
-		$share_nominee_P_fb_count		= mysqli_num_rows(mysqli_query($my_db, $share_nominee_P_fb_query));
-		$share_nominee_P_ks_query		= "SELECT * FROM ".$_gl['share_info_table']." WHERE sns_regdate LIKE  '%".$daily_date."%' AND sns_flag='nominee' AND sns_media='ks' AND sns_gubun='PC'";
-		$share_nominee_P_ks_count		= mysqli_num_rows(mysqli_query($my_db, $share_nominee_P_ks_query));
-		$share_nominee_P_tw_query		= "SELECT * FROM ".$_gl['share_info_table']." WHERE sns_regdate LIKE  '%".$daily_date."%' AND sns_flag='nominee' AND sns_media='tw' AND sns_gubun='PC'";
-		$share_nominee_P_tw_count		= mysqli_num_rows(mysqli_query($my_db, $share_nominee_P_tw_query));
-		$share_nominee_M_fb_query		= "SELECT * FROM ".$_gl['share_info_table']." WHERE sns_regdate LIKE  '%".$daily_date."%' AND sns_flag='nominee' AND sns_media='fb' AND sns_gubun='MOBILE'";
-		$share_nominee_M_fb_count		= mysqli_num_rows(mysqli_query($my_db, $share_nominee_M_fb_query));
-		$share_nominee_M_ks_query		= "SELECT * FROM ".$_gl['share_info_table']." WHERE sns_regdate LIKE  '%".$daily_date."%' AND sns_flag='nominee' AND sns_media='ks' AND sns_gubun='MOBILE'";
-		$share_nominee_M_ks_count		= mysqli_num_rows(mysqli_query($my_db, $share_nominee_M_ks_query));
-		$share_nominee_M_tw_query		= "SELECT * FROM ".$_gl['share_info_table']." WHERE sns_regdate LIKE  '%".$daily_date."%' AND sns_flag='nominee' AND sns_media='tw' AND sns_gubun='MOBILE'";
-		$share_nominee_M_tw_count		= mysqli_num_rows(mysqli_query($my_db, $share_nominee_M_tw_query));
-		$share_nominee_M_kt_query		= "SELECT * FROM ".$_gl['share_info_table']." WHERE sns_regdate LIKE  '%".$daily_date."%' AND sns_flag='nominee' AND sns_media='kt' AND sns_gubun='MOBILE'";
-		$share_nominee_M_kt_count		= mysqli_num_rows(mysqli_query($my_db, $share_nominee_M_kt_query));
-
-		$share_vote_P_fb_query		= "SELECT * FROM ".$_gl['share_info_table']." WHERE sns_regdate LIKE  '%".$daily_date."%' AND sns_flag='vote' AND sns_media='fb' AND sns_gubun='PC'";
-		$share_vote_P_fb_count		= mysqli_num_rows(mysqli_query($my_db, $share_vote_P_fb_query));
-		$share_vote_P_ks_query		= "SELECT * FROM ".$_gl['share_info_table']." WHERE sns_regdate LIKE  '%".$daily_date."%' AND sns_flag='vote' AND sns_media='ks' AND sns_gubun='PC'";
-		$share_vote_P_ks_count		= mysqli_num_rows(mysqli_query($my_db, $share_vote_P_ks_query));
-		$share_vote_P_tw_query		= "SELECT * FROM ".$_gl['share_info_table']." WHERE sns_regdate LIKE  '%".$daily_date."%' AND sns_flag='vote' AND sns_media='tw' AND sns_gubun='PC'";
-		$share_vote_P_tw_count		= mysqli_num_rows(mysqli_query($my_db, $share_vote_P_tw_query));
-		$share_vote_M_fb_query		= "SELECT * FROM ".$_gl['share_info_table']." WHERE sns_regdate LIKE  '%".$daily_date."%' AND sns_flag='vote' AND sns_media='fb' AND sns_gubun='MOBILE'";
-		$share_vote_M_fb_count		= mysqli_num_rows(mysqli_query($my_db, $share_vote_M_fb_query));
-		$share_vote_M_ks_query		= "SELECT * FROM ".$_gl['share_info_table']." WHERE sns_regdate LIKE  '%".$daily_date."%' AND sns_flag='vote' AND sns_media='ks' AND sns_gubun='MOBILE'";
-		$share_vote_M_ks_count		= mysqli_num_rows(mysqli_query($my_db, $share_vote_M_ks_query));
-		$share_vote_M_tw_query		= "SELECT * FROM ".$_gl['share_info_table']." WHERE sns_regdate LIKE  '%".$daily_date."%' AND sns_flag='vote' AND sns_media='tw' AND sns_gubun='MOBILE'";
-		$share_vote_M_tw_count		= mysqli_num_rows(mysqli_query($my_db, $share_vote_M_tw_query));
-		$share_vote_M_kt_query		= "SELECT * FROM ".$_gl['share_info_table']." WHERE sns_regdate LIKE  '%".$daily_date."%' AND sns_flag='vote' AND sns_media='kt' AND sns_gubun='MOBILE'";
-		$share_vote_M_kt_count		= mysqli_num_rows(mysqli_query($my_db, $share_vote_M_kt_query));
-
-		$share_end_P_fb_count		= $share_nominee_P_fb_count + $share_vote_P_fb_count;
-		$share_end_P_ks_count		= $share_nominee_P_ks_count + $share_vote_P_ks_count;
-		$share_end_P_tw_count		= $share_nominee_P_tw_count + $share_vote_P_tw_count;
-		$share_end_M_fb_count		= $share_nominee_M_fb_count + $share_vote_M_fb_count;
-		$share_end_M_ks_count		= $share_nominee_M_ks_count + $share_vote_M_ks_count;
-		$share_end_M_tw_count		= $share_nominee_M_tw_count + $share_vote_M_tw_count;
-		$share_end_M_kt_count		= $share_nominee_M_kt_count + $share_vote_M_kt_count;
-
-
-		$total_count					= $share_main_P_fb_count + $share_main_P_ks_count + $share_main_P_tw_count + $share_main_M_fb_count + $share_main_M_ks_count + $share_main_M_tw_count + $share_main_M_kt_count + $share_nominee_P_fb_count + $share_nominee_P_ks_count + $share_nominee_P_tw_count + $share_nominee_M_fb_count + $share_nominee_M_ks_count + $share_nominee_M_tw_count + $share_nominee_M_kt_count + $share_vote_P_fb_count + $share_vote_P_ks_count + $share_vote_P_tw_count + $share_vote_M_fb_count + $share_vote_M_ks_count + $share_vote_M_tw_count + $share_vote_M_kt_count;
-?>
-              <tr>
-                <td><?php echo $daily_date?></td>
-                <td><?php echo number_format($share_main_P_fb_count)?></td>
-                <td><?php echo number_format($share_main_P_ks_count)?></td>
-                <td><?php echo number_format($share_main_P_tw_count)?></td>
-                <td><?php echo number_format($share_main_M_fb_count)?></td>
-                <td><?php echo number_format($share_main_M_ks_count)?></td>
-                <td><?php echo number_format($share_main_M_tw_count)?></td>
-                <td><?php echo number_format($share_main_M_kt_count)?></td>
-
-                <td bgcolor="skyblue"><?php echo number_format($share_end_P_fb_count)?></td>
-                <td bgcolor="skyblue"><?php echo number_format($share_end_P_ks_count)?></td>
-                <td bgcolor="skyblue"><?php echo number_format($share_end_P_tw_count)?></td>
-                <td bgcolor="skyblue"><?php echo number_format($share_end_M_fb_count)?></td>
-                <td bgcolor="skyblue"><?php echo number_format($share_end_M_ks_count)?></td>
-                <td bgcolor="skyblue"><?php echo number_format($share_end_M_tw_count)?></td>
-                <td bgcolor="skyblue"><?php echo number_format($share_end_M_kt_count)?></td>
-
-                <td><?php echo number_format($total_count)?></td>
-              </tr>
-<?php 
-	}
-?>
-            </tbody>
-          </table>
-        </div>
-      </div>
       <!-- /.row -->
-    </div>
-    <!-- /.container-fluid -->
-  </div>
-  <!-- /#page-wrapper -->
-</div>
-<!-- /#wrapper -->
-</body>
-
-</html>
-
-
-
-<script type="text/javascript">
- 
-	function pageRun(num)
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="table-responsive">
+            <div id="daily_topgirl_vote_count_div1" style="display:block">
+              <table class="table table-hover">
+                <thead>
+                  <tr><th>날짜</th><th>공유위치</th><th>PC</th><th>Mobile</th><th>Total</th></tr>
+                </thead>
+                <tbody>
+<?php
+	$daily_date_query	= "SELECT sns_regdate FROM share_info WHERE 1 AND sns_regdate > '2018-04-30 18' Group by substr(sns_regdate,1,10) order by sns_regdate desc";
+	$date_res			= mysqli_query($my_db, $daily_date_query);
+	while($date_daily_data = mysqli_fetch_array($date_res))
 	{
-		f = document.frm_execute;
-		f.pg.value = num;
-		f.submit();
+		$daily_date		= substr($date_daily_data['sns_regdate'],0,10);
+		$media_query	= "SELECT sns_media, COUNT( sns_media ) media_cnt FROM share_info WHERE sns_regdate LIKE  '%".$daily_date."%' GROUP BY sns_media";
+		$media_res		= mysqli_query($my_db, $media_query);
+		
+		unset($media_name);
+		unset($media_cnt);
+		unset($pc_cnt);
+		unset($mobile_cnt);
+		unset($total_cnt);
+		$total_media_cnt = 0;
+		$total_mobile_cnt = 0;
+		$total_pc_cnt = 0;
+		while ($media_daily_data = mysqli_fetch_array($media_res))
+		{
+			$media_name[]	= $media_daily_data['sns_media'];
+			$media_cnt[]	= $media_daily_data['media_cnt'];
+			$pc_query		= "SELECT * FROM share_info WHERE sns_regdate LIKE  '%".$daily_date."%' AND sns_media='".$media_daily_data['sns_media']."' AND sns_gubun='PC'";
+			$pc_count		= mysqli_num_rows(mysqli_query($my_db, $pc_query));
+			$mobile_query	= "SELECT * FROM share_info WHERE sns_regdate LIKE  '%".$daily_date."%' AND sns_media='".$media_daily_data['sns_media']."' AND sns_gubun='MOBILE'";
+			$mobile_count	= mysqli_num_rows(mysqli_query($my_db, $mobile_query));
+			$pc_cnt[]		= $pc_count;
+			$mobile_cnt[]	= $mobile_count;
+			$total_cnt[]		= $pc_count + $mobile_count;
+		}
+
+		$rowspan_cnt =  count($media_name);
+		$i = 0;
+		foreach($media_name as $key => $val)
+		{
+?>
+                  <tr>
+<?
+			if ($i == 0)
+			{
+?>
+                    <td rowspan="<?=$rowspan_cnt?>"><?php echo $daily_date?></td>
+<?
+			}
+?>
+                    <td><?=$val?></td>
+                    <td><?=number_format($pc_cnt[$i])?></td>
+                    <td><?=number_format($mobile_cnt[$i])?></td>
+                    <td><?=number_format($total_cnt[$i])?></td>
+                  </tr>
+<?php
+			$total_media_cnt += $media_cnt[$i];
+			$total_mobile_cnt += $mobile_cnt[$i];
+			$total_pc_cnt += $pc_cnt[$i];                  
+			$i++;
+		}
+?>
+                  <tr bgcolor="skyblue">
+                    <td colspan="2">합계</td>
+                    <td><?php echo number_format($total_pc_cnt)?></td>
+                    <td><?php echo number_format($total_mobile_cnt)?></td>
+                    <td><?php echo number_format($total_media_cnt)?></td>
+                  </tr>
+
+<?
 	}
-
-
-</script>
+?>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container-fluid -->
+    </div>
+    <!-- /#page-wrapper -->
+  </div>
+  <!-- /#wrapper -->

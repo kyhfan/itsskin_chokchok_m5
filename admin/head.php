@@ -12,7 +12,7 @@ if (isset($_SESSION['ss_mb_name']) == false)
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>잇츠스킨 - 촉촉촉촉촉촉촉</title>
+    <title>잇츠스킨 - 5월 캠페인</title>
 	<!-- jQuery Version 1.11.0 -->
 	<script src="js/jquery-1.11.0.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
@@ -70,7 +70,7 @@ if (isset($_SESSION['ss_mb_name']) == false)
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="entry_list.php">잇츠스킨 - 촉촉촉촉촉촉촉</a>
+          <a class="navbar-brand" href="entry_list.php">잇츠스킨 - 5월 캠페인</a>
         </div>
         <!-- Top Menu Items -->
         <ul class="nav navbar-right top-nav">
@@ -90,30 +90,30 @@ if (isset($_SESSION['ss_mb_name']) == false)
                 <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Daily Count<i class="fa fa-fw fa-caret-down"></i></a>
                 <ul id="demo" class="collapse">
                   <li>
-                    <a href="daily_tracking_count.php">일자별 사이트 유입자 수</a>
+                    <a href="daily_tracking_count.php">4월 일자별 사이트 유입자 수</a>
                   </li>
                   <li>
-                    <a href="daily_media_count.php">일자별 이벤트 참여자 수</a>
+                    <a href="daily_media_count.php">4월 일자별 이벤트 참여자 수</a>
                   </li>
-                  <!-- <li>
-                    <a href="daily_media_count2.php">마음봇 사진 업로드 참여자 수</a>
-                  </li> -->
-                  <!-- <li>
-                    <a href="daily_outlink_count.php">일자별 아웃링크 클릭 수</a>
-                  </li> -->
-                  <!--<li>
-                    <a href="daily_exp_count.php">사이트(체험팩) 레벨별 참여자 수</a>
-                  </li>-->
                   <li>
-                    <a href="daily_share_count.php">일자별 SNS 공유 버튼 클릭 수</a>
+                    <a href="daily_share_count.php">4월 일자별 SNS 공유 버튼 클릭 수</a>
                   </li>
-                  <!-- <li>
-                    <a href="daily_click_count.php">일자별 각 버튼 클릭 수</a>
-                  </li> -->
+                  <li>
+                    <a href="daily_tracking_count2.php">5월 일자별 사이트 유입자 수</a>
+                  </li>
+                  <li>
+                    <a href="daily_media_count2.php">5월 일자별 이벤트 참여자 수</a>
+                  </li>
+                  <li>
+                    <a href="daily_share_count2.php">5월 일자별 SNS 공유 버튼 클릭 수</a>
+                  </li>
                 </ul>
               </li>
               <li>
-                <a href="entry_list.php"><i class="fa fa-fw fa-table"></i> 이벤트 참여자 목록</a>
+                <a href="entry_list.php"><i class="fa fa-fw fa-table"></i> 4월 이벤트 참여자 목록</a>
+              </li>
+              <li>
+                <a href="entry_list2.php"><i class="fa fa-fw fa-table"></i> 5월 이벤트 참여자 목록</a>
               </li>
               <!-- <li>
                 <a href="entry_list2.php"><i class="fa fa-fw fa-table"></i> 마음봇 사진 업로드 참여자 목록</a>
