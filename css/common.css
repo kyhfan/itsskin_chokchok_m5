@@ -89,7 +89,7 @@ iframe {
 /* popup */
 html.popup-opened {
 	height: 100%;
-	overflow: hidden;
+	/* overflow: hidden; */
 	/*	margin-right: 17px;*/
 }
 .popup-wrap {

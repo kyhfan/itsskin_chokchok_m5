@@ -93,6 +93,9 @@ $(function(){
 			if($popup.length) {
 				//						팝업 오픈
 				$html.addClass('popup-opened');
+				// $body.css("height","");
+				// $html.css("height","");
+				// $('html, body').css("height","");
 				$wrap.addClass('is-opened');
 				//						요일별 처리
 				// if(dn.length) {
@@ -106,6 +109,9 @@ $(function(){
 
 			$target.closest('.popup-wrap').removeClass('is-opened');
 			$html.removeClass('popup-opened');
+			// $body.css("height","100%");
+			// $html.css("height","");
+			// $body.css("height","");
 		}
 	}
 	popup.bind();
