@@ -292,7 +292,7 @@ var agree2 	= "N";
 				Kakao.Link.sendTalkLink({
 					label: '[잇츠스킨] 이런 수분 처음일 걸?\r\n혜리의 촉촉촉촉촉촉촉한 영상 확인하고\r\n잇츠스킨 하이드라 루틴 세럼 선물받자!',
 					image: {
-						src: 'http://routine.itsskin.com/images/share_img.jpg',
+						src: 'http://routine.itsskin.com/images/share_img2.jpg',
 						width: '1200',
 						height: '630'
 					},
