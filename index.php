@@ -75,7 +75,7 @@
                     <li><a href="index.php?pTarget=goFill" data-slide="goFill">빈칸 이벤트</a></li>
                     <!-- <li>QUIZ SHOW</li> -->
                     <li><a href="index.php?pTarget=goRoutin" data-slide="goRoutin">나만의 루틴 확인</a></li>
-                    <li><a href="./month_4/index.php" target="_blank">지난 이벤트</a></li>
+                    <li><a href="./month_4/event.php" target="_blank">지난 이벤트</a></li>
                 </ul>
             </div>
             <div class="share-group">

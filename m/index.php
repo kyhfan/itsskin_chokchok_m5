@@ -70,7 +70,7 @@
                 <li class="sectionMove"><a href="index.php?pTarget=goFill" data-slide="goFill">빈칸 이벤트</a></li>
                 <!-- <li><a href="#" onclick="alert('준비중입니다')">QUIZ SHOW</a></li> -->
                 <li class="sectionMove"><a href="index.php?pTarget=goRoutin" data-slide="goRoutin">나만의 루틴 확인</a></li>
-                <li><a href="../month_4/m/index.php" target="_blank">지난 이벤트</a></li>
+                <li><a href="../month_4/m/event.php" target="_blank">지난 이벤트</a></li>
             </ul>
             <div class="share-list">
                 <a href="javascript:void(0)" data-share-target="fb">
