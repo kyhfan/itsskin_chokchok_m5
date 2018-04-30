@@ -854,6 +854,23 @@ html.popup-opened {
 .popup .block-msg dl dd {
 	padding-left: 6px;
 }
+.popup.retry > .inner {
+	padding: 25px 0 26px;
+}
+.popup.retry .title {
+	width: 265px;
+	margin: 0 auto 18px;
+}
+.popup.retry .btn {
+	position: static !important;
+	width: 100px;
+	height: 33px;
+	background: url(../images/popup/popup_retry_btn.png) no-repeat;
+	background-size: cover;
+	color: #ffffff;
+	font-size: 13px;
+	font-weight: 700;
+}
 /* popup */
 
 
