@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="916e13ee-4180-47e8-bf56-0f33f8cca72e" name="Default" comment="" />
+    <list default="true" id="916e13ee-4180-47e8-bf56-0f33f8cca72e" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/js/m_main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/m_main.js" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="m_main.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="m_main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/m_main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1291">
-              <caret line="675" column="10" selection-start-line="675" selection-start-column="10" selection-end-line="675" selection-end-column="10" />
+            <state relative-caret-position="660">
+              <caret line="107" column="75" selection-start-line="107" selection-start-column="75" selection-end-line="107" selection-end-column="75" />
             </state>
           </provider>
         </entry>
@@ -77,7 +79,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="710">
@@ -89,7 +91,7 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/m/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-851">
+            <state relative-caret-position="-2501">
               <caret line="138" column="94" selection-start-line="138" selection-start-column="94" selection-end-line="138" selection-end-column="94" />
             </state>
           </provider>
@@ -141,10 +143,10 @@
         <option value="$PROJECT_DIR$/css/common.css" />
         <option value="$PROJECT_DIR$/m/index.php" />
         <option value="$PROJECT_DIR$/m/popup.html" />
-        <option value="$PROJECT_DIR$/js/m_main.js" />
         <option value="$PROJECT_DIR$/month_4/css/main.css" />
         <option value="$PROJECT_DIR$/month_4/index.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/js/m_main.js" />
       </list>
     </option>
   </component>
@@ -253,12 +255,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1524813897983</updated>
-      <workItem from="1524813899234" duration="20072000" />
+      <workItem from="1524813899234" duration="21005000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20072000" />
+    <option name="totallyTimeSpent" value="21005000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1177" extended-state="6" />
@@ -378,20 +380,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/m/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-851">
-          <caret line="138" column="94" selection-start-line="138" selection-start-column="94" selection-end-line="138" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/m_main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1291">
-          <caret line="675" column="10" selection-start-line="675" selection-start-column="10" selection-end-line="675" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/month_4/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
@@ -420,6 +408,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="710">
           <caret line="441" selection-start-line="441" selection-end-line="441" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/m/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2501">
+          <caret line="138" column="94" selection-start-line="138" selection-start-column="94" selection-end-line="138" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/m_main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="107" column="75" selection-start-line="107" selection-start-column="75" selection-end-line="107" selection-end-column="75" />
         </state>
       </provider>
     </entry>
