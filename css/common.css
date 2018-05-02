@@ -148,7 +148,7 @@ html.popup-opened {
 	width: 52px;
 	height: 82px;
 	background: url(../images/popup/popup_waterdrop.png) no-repeat;
-	background-size: cover;
+	background-size: 100% 100%;
 	transition: all 0.34s ease 0.1s;
 	/*opacity: 0;*/
 	transform: scale(0);
