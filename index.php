@@ -43,6 +43,13 @@
     
     <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
     <script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
+    <script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-117485072-1');
+	</script>
 
 </head>
 <body>
