@@ -40,6 +40,14 @@
     <script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
     <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
     <script src="../js/m_main.js"></script>
+    <script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-117485072-1');
+	</script>
+
 </head>
 <body>
 <script src=http://mobile.midas-i.com/roianal.mezzo/tracking?cmp_no=1859&depth=57></script>
