@@ -144,7 +144,7 @@ html.popup-opened {
 	position: absolute;
 	top: -107px;
 	left: 50%;
-	margin-left: -26px;
+	margin-left: -50px;
 	width: 52px;
 	height: 82px;
 	background: url(../images/popup/popup_waterdrop.png) no-repeat;
