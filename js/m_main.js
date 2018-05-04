@@ -96,7 +96,7 @@ var agree2 	= "N";
 					if (target == "goRoutin")
 						$('html, body').animate({scrollTop:scTop-86}, 500);
 					else
-                    	$('html, body').animate({scrollTop:scTop-20}, 500);
+                    	$('html, body').animate({scrollTop:scTop-19}, 500);
                 }else{
                     location.href = url;
                 }
@@ -105,7 +105,7 @@ var agree2 	= "N";
         });
 
         $('.down-nav button').on('click', function() {
-            $('html, body').animate({scrollTop:$('#goFill').offset().top+1}, 500);
+            $('html, body').animate({scrollTop:$('#goFill').offset().top-19}, 500);
 		});
 	});
 

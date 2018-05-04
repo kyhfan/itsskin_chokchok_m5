@@ -57,8 +57,8 @@ include_once "./head.php";
             </div>
             <div class="navi-menu">
                 <ul>
-                    <li class="is-active"><a href="index.php?pTarget=goMain" onclick="event1(3)">It's My 세럼</a></li>
-                    <li><a href="index.php?pTarget=goRoutin" class="go_routine" onclick="event1(4)">내게 맞는 루틴 찾기</a></li>
+                    <li class="is-active"><a href="index.php?pTarget=goMain" class="sectionMove" data-slide="goMain" onclick="event1(3)">It's My 세럼</a></li>
+                    <li><a href="index.php?pTarget=goRoutin" class="go_routine sectionMove" data-slide="goRoutin" onclick="event1(4)">내게 맞는 루틴 찾기</a></li>
                     <!-- <li>QUIZ SHOW</li> -->
                     <li><a href="event.php">촉촉 영상 공유 이벤트</a></li>
                     <li><a href="../index.php">진행중인 이벤트<img src="./images/new_ico.png" alt="" style="vertical-align: -4px; margin-left: 5px;"></a></li>
@@ -90,7 +90,7 @@ include_once "./head.php";
 			<?
 }
 			?>
-			<section class="main-visual">
+			<section class="main-visual" id="goMain">
 				<div class="serum" data-0="top: 0px" data-end="top: -350px">
 					<img src="./images/section_main_product.png" alt="" class="wave" data-wave="0.6">
 				</div>
@@ -151,7 +151,7 @@ include_once "./head.php";
 					</div>
 				</div>
 			</section>
-			<section class="product-info">
+			<section class="product-info" id="goRoutin">
 				<div class="product-wrapper">
 					<div class="tap-area">
 						<button type="button" class="tap _01 is-active" data-tap-target="1">
@@ -629,6 +629,22 @@ include_once "./head.php";
 			}
 			?>
 		});
+
+        $(window).scroll(function(){
+            var scTop = $(this).scrollTop();
+
+            if (scTop<$('#goRoutin').offset().top) {
+                currentSection = "goMain";
+            } else {
+                currentSection = "goRoutin";
+            }
+
+            setTimeout(function() {
+                $('.navi-menu ul li').removeClass('is-active');
+                $("[data-slide="+currentSection+"]").parent().addClass('is-active');
+            }, 100);
+
+        });
 
 
 	</script>
