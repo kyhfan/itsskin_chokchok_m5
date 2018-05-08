@@ -694,6 +694,7 @@ function event1(depth){
 
 function show_winner_list(idx) {
 	var targetArray = "";
+	var innerHtml = "";
 	switch(idx) {
 		case 1: 
 			targetArray = winnerArray_1st;
@@ -701,11 +702,12 @@ function show_winner_list(idx) {
 		case 2:
 			targetArray = winnerArray_2nd;
 			break;
-			
-		for(i=0; i<targetArray.length; i++) {
-			console.log("aaa");
-		}
 	}
+	for(i=0; i<targetArray.length; i++) {
+		innerHtml += "<li>"+targetArray[i]+"</li>";
+	}
+	
+	
 	
 //	타겟 배열 뿌려주기
 }
