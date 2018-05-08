@@ -725,7 +725,6 @@ function show_winner_list(idx, wordObj) {
 				}
 			}
 			if(searchArray.length>0) {
-				
 				$("#popup-winner .tab").removeClass('is-active');
 				$("#popup-winner .tab:nth-child(1)").addClass('is-active');
 			}else{
@@ -734,8 +733,10 @@ function show_winner_list(idx, wordObj) {
 						searchArray.push(winnerArray_2nd[i]);
 					}
 				}
-				$("#popup-winner .tab").removeClass('is-active');
-				$("#popup-winner .tab:nth-child(2)").addClass('is-active');
+				if(searchArray.length>0) {
+					$("#popup-winner .tab").removeClass('is-active');
+					$("#popup-winner .tab:nth-child(2)").addClass('is-active');
+				}
 			}
 //			if(searchArray.length<1) {
 //				for(i=0; i<winnerArray_2nd.length; i++) {
@@ -753,7 +754,7 @@ function show_winner_list(idx, wordObj) {
 	}
 	
 	if(innerHtml == "") {
-		innerHtml = "<li>당첨된 내역이 없습니다.</li>";
+		innerHtml = "<li style='float:none;'>당첨된 내역이 없습니다.</li>";
 	}
 	
 	$("#popup-winner .winner-list").html(innerHtml);

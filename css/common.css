@@ -497,6 +497,7 @@ html.popup-opened {
 	margin-right: 4px;
 	font-size: 17px;
 	vertical-align: middle;
+	text-align: center;
 }
 .popup.winner > .inner .search-area button {
 	background: #ee324f;
@@ -572,6 +573,7 @@ html.popup-opened {
 	font-size: 20px;
 	margin-left: 9px;
 	text-align: left;
+	line-height: 26px;
 }
 .popup.winner .winner-wrap .confirm-btn{
 	background: url(../images/popup/popup_wrong_btn.png) center no-repeat;
