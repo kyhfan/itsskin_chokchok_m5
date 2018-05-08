@@ -692,9 +692,13 @@ function event1(depth){
 	return false;
 }
 
-function show_winner_list(idx) {
+function show_winner_list(idx, word) {
 	var targetArray = "";
 	var innerHtml = "";
+	
+	$("#popup-winner .tab").removeClass('is-active');
+	$("#popup-winner .tab:nth-child("+idx+")").addClass('is-active');
+	
 	switch(idx) {
 		case 1: 
 			targetArray = winnerArray_1st;
@@ -706,7 +710,7 @@ function show_winner_list(idx) {
 	for(i=0; i<targetArray.length; i++) {
 		innerHtml += "<li>"+targetArray[i]+"</li>";
 	}
-	
+	$("#popup-winner .winner-list").html(innerHtml);
 	
 	
 //	타겟 배열 뿌려주기

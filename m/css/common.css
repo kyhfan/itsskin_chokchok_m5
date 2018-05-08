@@ -828,19 +828,23 @@ html.popup-opened {
 	overflow: hidden;
 }
 .popup.winner .list-wrap > .inner {
-	padding: 0 28px;
+	padding: 0 0 0 32px;
 	height: 100%;
 	overflow: auto;
+	text-align: center;
 }
 .popup.winner .list-wrap .winner-list {
+	display: inline-block;
 	font-size: 0;
 	color: #3d3935;
 	text-align: left;
+	overflow: hidden;
 }
 .popup.winner .list-wrap .winner-list li {
-	display: inline-block;
+	float: left;
 	margin: 0 13px 10px 0;
 	font-size: 12px;
+	min-width: 60px;
 }
 .popup.winner .list-wrap .winner-list li:nth-child(3n) {
 	margin-right: 0;
