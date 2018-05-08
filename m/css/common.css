@@ -831,13 +831,12 @@ html.popup-opened {
 	padding: 0 0 0 32px;
 	height: 100%;
 	overflow: auto;
-	text-align: center;
+	text-align: left;
 }
 .popup.winner .list-wrap .winner-list {
 	display: inline-block;
 	font-size: 0;
 	color: #3d3935;
-	text-align: left;
 	overflow: hidden;
 }
 .popup.winner .list-wrap .winner-list li {
