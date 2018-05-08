@@ -492,7 +492,7 @@
 
         if (param == "" || param.length < 4)
         {
-            alert("휴대전화 마지막 네자리로 검색해 주세요.");
+            alert("휴대전화 마지막 네 자리로 검색해 주세요.");
             param = "hydra";
             flag = "tab";
         }

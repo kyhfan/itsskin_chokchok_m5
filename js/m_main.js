@@ -699,7 +699,7 @@ function show_winner_list(idx, wordObj) {
 	var innerHtml = "";
 	var word = $(wordObj).siblings().val();
 	if(word && word.length<4 || word == "") {
-		alert("휴대폰번호 네자리를 입력해주세요.");
+		alert("휴대전화 마지막 네 자리로 검색해주세요.");
 		$(wordObj).siblings().val("").focus();
 		show_winner_list(1);
 		return;
