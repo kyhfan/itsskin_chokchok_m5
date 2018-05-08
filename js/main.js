@@ -263,6 +263,11 @@ $(function(){
 	});
 
 	$(".april-banner > a").on("click", function(){
+		clear_winner_list();
+		popup.open("#popup-winner");
+	});
+
+	$(".event-go > a").on("click", function(){
 		moveEvent();
 	});
 

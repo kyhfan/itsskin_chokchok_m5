@@ -61,7 +61,7 @@
 }
 .section1-wrap {
 	/* background: url(../images/section1_bg.png) no-repeat center; */
-	background: url(../images/section1_bg.jpg) no-repeat center;
+	background: url(../images/section1_test_bg.jpg) no-repeat center;
 	background-size: cover;
 	/* width: 1920px; */
 	height: 100%;
@@ -123,12 +123,7 @@
 	/* margin: -130px 0 0 -664px; */
 	/*margin: -135px 0 0 0;*/
 	/*margin: -7% 0 0 -35.67%;*/
-	/* margin: -9.85% 0 0 -48.46%; */
-	margin: -9.85% 0 0 -50.2%;
-}
-.section1-wrap .event-go {
-	position: absolute;
-	margin-top: 17%;
+	margin: -9.85% 0 0 -48.46%;
 }
 .section1-wrap .april-banner {
 	position: absolute;
@@ -139,8 +134,8 @@
 	/*margin: -8.2% -2.81% 0 0;*/
 	/*margin: -11.53% -3.94% 0 0;*/
 	margin: -14.53% -3.94% 0 0;
-	/* width: 17.51%; */
-	width: 15.41%;
+	/*width: 13.75%;*/
+	width: 17.51%;
 	/* margin: -138px 158px 0 0; */
 	/* display: none; */
 }
@@ -157,7 +152,7 @@
 	top: 25%;
 	/*left: 1px;*/
 	font-size: 0;
-	/* text-align: center; */
+	text-align: center;
 }
 .section1-wrap .title .obj-group .obj {
 	position: relative;
