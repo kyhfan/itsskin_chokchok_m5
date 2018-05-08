@@ -784,7 +784,7 @@ html.popup-opened {
 }
 .popup.winner .input-wrap {
 	width: 201px;
-	margin: 8px auto 14px;
+	margin: 8px auto 20px;
 	font-size: 0;
 }
 .popup.winner .input-wrap input[type="tel"] {
@@ -801,6 +801,22 @@ html.popup-opened {
 	background: #ee324f;
 	color: #ffffff;
 	vertical-align: top;
+}
+.popup.winner .tab-area {
+	width: 280px;
+	margin: 0 auto;
+	font-size: 0;
+}
+.popup.winner .tab-area .tab {
+	width: 50%;
+	height: 26px;
+	background: rgba(238, 50, 79, 0.4);
+	color: #ffffff;
+	font-size: 10px;
+	font-weight: 500;
+}
+.popup.winner .tab-area .tab.is-active {
+	background: rgba(238, 50, 79, 1);
 }
 .popup.winner .list-wrap {
 	width: 280px;
