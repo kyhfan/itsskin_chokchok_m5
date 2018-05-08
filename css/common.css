@@ -511,27 +511,56 @@ html.popup-opened {
 	text-align: center;
 	margin: 27px 0 36px 0;
 }
+.popup.winner .winner-wrap .tab-area{
+	width: 510px;
+	margin: 0 auto;
+	cursor: pointer;
+}
+.popup.winner .winner-wrap .tab-area .hydra-tab{
+	width: 50%;
+	height: 39px;
+	background: #ee324f;
+	float: left;
+	color: #fff;
+	padding-top: 13px;
+	font-weight: bold;
+}
+.popup.winner .winner-wrap .tab-area .coffee-tab{
+	width: 50%;
+	height: 39px;
+	display: inline-block;
+	background: #f8adb9;
+	color: #fff;
+	padding-top: 13px;
+	font-weight: bold;
+}
 .popup.winner .winner-wrap .winner-area{
 	position: relative;
 	width: 510px;
-	height: 232px;
+	height: 187px;
 	background: #fafafa;
 	margin: 0 auto;
 }
 .popup.winner .winner-wrap .winner-area .inner-area{
 	position: absolute;
 	width: 446px;
-	height: 200px;
+	height: 153px;
 	/* margin: 0 auto; */
 	overflow-y: scroll;
 	top: 16px;
-	left: 29px;
+	left: 37px;
+}
+.popup.winner .winner-wrap .winner-area .inner-area .no-result{
+	font-size: 20px;
+	text-align: center;
+	width: 100%;
 }
 .popup.winner .winner-wrap .winner-area .inner-area ul li{
 	width: 100px;
 	float: left;
 	font-size: 20px;
 	margin-left: 9px;
+	text-align: left;
 }
 .popup.winner .winner-wrap .confirm-btn{
 	background: url(../images/popup/popup_wrong_btn.png) center no-repeat;

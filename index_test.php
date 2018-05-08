@@ -10,7 +10,7 @@
     // print_r($_SERVER["HTTP_USER_AGENT"]);
     if ($mobileYN == "MOBILE")
     {
-        echo "<script>location.href='m/index.php?media=".$_REQUEST["media"]."&r=".$_REQUEST["r"]."&ref=".$_REQUEST["ref"]."';</script>";
+        echo "<script>location.href='m/index_test.php?media=".$_REQUEST["media"]."&r=".$_REQUEST["r"]."&ref=".$_REQUEST["ref"]."';</script>";
     }else{
         $saveMedia     = $mnv_f->SaveMedia();
         $rs_tracking   = $mnv_f->InsertTrackingInfo($mobileYN);
@@ -32,14 +32,13 @@
     <title>It's Skin</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main_test.css">
     <link type="image/icon" rel="shortcut icon" href="http://routine.itsskin.com/images/hydra_favi.ico" />
 
     <script src="./js/jquery-1.11.2.min.js"></script>
     <script src="./lib/skrollr-master/dist/skrollr.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
     <script src="http://www.youtube.com/player_api"></script>
-    <script src="./js/winner_list.js"></script>
     <script src="./js/main.js"></script>
     
     <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
@@ -102,8 +101,7 @@
                         <img src="./images/section1_cali.png" alt="It's my skin">
                     </div>
                     <div class="april-banner">
-                        <!-- <a href="javascript:void(0)" onclick="event1(65)"><img src="./images/section1_april_winner.png" alt="4월 혜리 영상 공유 이벤트"></a> -->
-                        <a href="javascript:void(0)"><img src="./images/section1_winner_banner.png" alt="4월 혜리 영상 공유 이벤트"></a>
+                        <a href="javascript:void(0)" onclick="event1(65)"><img src="./images/section1_april_winner.png" alt="4월 혜리 영상 공유 이벤트"></a>
                     </div>
                     <div class="water-group">
                         <div class="water-drop _1">
@@ -152,9 +150,6 @@
                             <span class="obj" data-idx="6">
                                 <img src="./images/main_text_obj.png" alt="촉">
                             </span>
-                            <div class="event-go">
-                                <a href="javascript:void(0)" onclick="event1(65)"><img src="./images/section1_event_go.png" alt="영상보고 선물받자! EVENT GO"></a>
-                            </div>
                         </div>
                     </div>
                     <div class="scroll-arrow">
@@ -347,7 +342,7 @@
         //     });
         // }
 
-        winner_list('hydra','tab');
+
 
         $('.water-drop').on('mouseover', function() {
             if(!$(this).hasClass('rubberBand')) {
@@ -474,86 +469,6 @@
 
     });
 
-	function winner_list(param, flag)
-	{
-		var winner_list = "";
-        $(".winner-list").html("");
-
-        if (param == "")
-        {
-            alert("휴대전화 마지막 네자리로 검색해 주세요.");
-            param = "hydra";
-            flag = "tab";
-        }
-
-        if (flag == "tab")
-        {
-            if (param == "hydra")
-            {
-                for (var i=0; i<winnerArray_1st.length;i++)
-                {
-                    winner_list += "<li>"+winnerArray_1st[i]+"</li>";
-                }		
-                $(".hydra-tab").css("background","#ee324f");
-                $(".coffee-tab").css("background","#f8adb9");
-            }else{
-                for (var i=0; i<winnerArray_2nd.length;i++)
-                {
-                    winner_list += "<li>"+winnerArray_2nd[i]+"</li>";
-                }		
-                $(".hydra-tab").css("background","#f8adb9");
-                $(".coffee-tab").css("background","#ee324f");
-            }
-        }else{
-            for (var i=0; i<winnerArray_1st.length;i++)
-            {
-                if (winnerArray_1st[i].match(param) !== null)
-                {
-                    winner_list += "<li>"+winnerArray_1st[i]+"</li>";
-                    $(".hydra-tab").css("background","#ee324f");
-                    $(".coffee-tab").css("background","#f8adb9");
-                    break;
-                }
-            }		
-            
-            if (winner_list == "")
-            {
-                for (var i=0; i<winnerArray_2nd.length;i++)
-                {
-                    if (winnerArray_2nd[i].match(param) !== null)
-                    {
-                        winner_list += "<li>"+winnerArray_2nd[i]+"</li>";
-                        $(".hydra-tab").css("background","#f8adb9");
-                        $(".coffee-tab").css("background","#ee324f");
-                        break;
-                    }
-                }		
-            }
-
-            if (winner_list == "")
-            {
-                winner_list += "<li class='no-result'>당첨된 내역이 없습니다.</li>";
-            }
-        }
-		$(".winner-list").html(winner_list);
-    }
-    
-    function clear_winner_list()
-    {
-        $("#search_txt").val("");
-        winner_list("hydra","tab");
-    }
-
-    $(".hydra-tab").on("click", function(){
-        winner_list("hydra","tab");
-    });
-    $(".coffee-tab").on("click", function(){
-        winner_list("coffee","tab");
-    });
-    $("#search_btn").on("click", function(){
-        var search_txt = $("#search_txt").val();
-        winner_list(search_txt, "search");
-    });
     </script>
 </body>
 </html>
