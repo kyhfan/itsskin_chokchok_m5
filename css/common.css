@@ -495,7 +495,8 @@ html.popup-opened {
 	width: 208px;
 	height: 43px;
 	margin-right: 4px;
-	font-size: 14px;
+	font-size: 17px;
+	vertical-align: middle;
 }
 .popup.winner > .inner .search-area button {
 	background: #ee324f;
@@ -504,6 +505,7 @@ html.popup-opened {
 	color: #fefefe;
 	font-size: 15px;
 	font-weight: bold;
+	vertical-align: middle;
 }
 .popup.winner .winner-wrap {
 	text-align: center;
