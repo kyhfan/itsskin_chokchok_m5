@@ -853,12 +853,15 @@ html.popup-opened {
 	margin: 0 auto;
 	border-top: 1px solid #d9d9d9;
 	padding: 12px 0 0;
-	text-align: left;
+/*	text-align: left;*/
+	text-align: center;
 }
 .popup .block-msg dl {
 	font-size: 10px;
 	color: #3d3935;
 	padding-left: 4px;
+	display: inline-block;
+	text-align: left;
 }
 .popup .block-msg dl dt {
 	position: relative;
