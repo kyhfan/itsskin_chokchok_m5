@@ -490,7 +490,7 @@
 		var winner_list = "";
         $(".winner-list").html("");
 
-        if (param == "")
+        if (param == "" || param.length < 4)
         {
             alert("휴대전화 마지막 네자리로 검색해 주세요.");
             param = "hydra";
