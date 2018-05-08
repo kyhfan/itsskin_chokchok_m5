@@ -549,6 +549,17 @@ html.popup-opened {
 	overflow-y: scroll;
 	top: 16px;
 	left: 37px;
+	overflow-x: hidden;
+}
+.ie .popup.winner .winner-wrap .winner-area .inner-area{
+	position: absolute;
+	width: 453px;
+	height: 153px;
+	/* margin: 0 auto; */
+	overflow-y: scroll;
+	top: 16px;
+	left: 37px;
+	overflow-x: hidden;
 }
 .popup.winner .winner-wrap .winner-area .inner-area .no-result{
 	font-size: 20px;
