@@ -834,8 +834,8 @@ html.popup-opened {
 	text-align: left;
 }
 .popup.winner .list-wrap .winner-list {
-	display: inline-block;
-	font-size: 0;
+/*	display: inline-block;*/
+/*	font-size: 0;*/
 	color: #3d3935;
 	overflow: hidden;
 }

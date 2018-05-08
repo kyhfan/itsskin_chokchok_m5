@@ -754,7 +754,7 @@ function show_winner_list(idx, wordObj) {
 	}
 	
 	if(innerHtml == "") {
-		innerHtml = "<li style='float:none;'>당첨된 내역이 없습니다.</li>";
+		innerHtml = "<li style='float:none;width:100%;padding-right:32px;text-align:center;'>당첨된 내역이 없습니다.</li>";
 	}
 	
 	$("#popup-winner .winner-list").html(innerHtml);
