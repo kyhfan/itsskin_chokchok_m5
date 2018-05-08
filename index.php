@@ -152,9 +152,9 @@
                             <span class="obj" data-idx="6">
                                 <img src="./images/main_text_obj.png" alt="촉">
                             </span>
-                            <div class="event-go">
-                                <a href="javascript:void(0)" onclick="event1(65)"><img src="./images/section1_event_go.png" alt="영상보고 선물받자! EVENT GO"></a>
-                            </div>
+                        </div>
+                        <div class="event-go">
+                            <a href="javascript:void(0)" onclick="event1(65)"><img src="./images/section1_event_go.png" alt="영상보고 선물받자! EVENT GO"></a>
                         </div>
                     </div>
                     <div class="scroll-arrow">
