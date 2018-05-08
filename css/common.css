@@ -543,7 +543,7 @@ html.popup-opened {
 }
 .popup.winner .winner-wrap .winner-area .inner-area{
 	position: absolute;
-	width: 446px;
+	width: 454px;
 	height: 153px;
 	/* margin: 0 auto; */
 	overflow-y: scroll;
