@@ -10,7 +10,7 @@
     // print_r($_SERVER["HTTP_USER_AGENT"]);
     if ($mobileYN == "PC")
     {
-        echo "<script>location.href='../index.php?media=".$_REQUEST["media"]."&r=".$_REQUEST["r"]."&ref=".$_REQUEST["ref"]."';</script>";
+        echo "<script>location.href='../index.php?media=".$_REQUEST["media"]."&r=".$_REQUEST["r"]."&ref=".$_REQUEST["ref"]."&w=".$_REQUEST["w"]."';</script>";
     }else{
         $saveMedia     = $mnv_f->SaveMedia();
         $rs_tracking   = $mnv_f->InsertTrackingInfo($mobileYN);
@@ -309,7 +309,17 @@ include_once "./popup.html";
 	</div>
 
 <script>
-
+    $("document").ready(function(){
+<?
+    if ($_REQUEST['w'] == "y")
+    {
+?>
+        its_month5.popup.open("#popup-winner");
+<?
+    }
+?>
+        
+    });
     // (function($) { $.QueryString = (function(a) { if (a == "") return {}; var b = {}; for (var i = 0; i < a.length; i++) { var p=a[i].split('='); if (p.length != 2) continue; b[p[0]] = decodeURIComponent(p[1].replace(/\+/g, " ")); } return b; })(window.location.search.substr(1).split('&')) })(jQuery);
     var currentSection = "goMain";
     // if($.QueryString['pTarget']) {

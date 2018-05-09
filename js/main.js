@@ -74,7 +74,7 @@ $(function(){
 				e.preventDefault();
 				// console.log($target);
 				popup.close($target);
-			});
+			});			
 		},
 		open: function(popupId, dn) {
 			var $popup = $(popupId),
@@ -270,6 +270,7 @@ $(function(){
 	$(".event-go > a").on("click", function(){
 		moveEvent();
 	});
+
 
 	function moveEvent() {
 		var scTop = $('.section2-wrap').offset().top;
@@ -513,4 +514,20 @@ function event1(depth){
 		}
 	});
 	return false;
+}
+
+function openWinner() {
+	// popup.open("#popup-winner");
+	var $popup = $("#popup-winner"),
+	$wrap = $popup.parent();
+
+	if($popup.length) {
+		if (!$('html').hasClass('popup-opened')){
+			setTimeout(function() {
+				$wrap.addClass('is-opened');
+				$('html').addClass('popup-opened');
+			},10);
+		}
+	}
+
 }
