@@ -323,6 +323,7 @@ include_once "./popup.html";
     if ($_REQUEST['w'] == "y")
     {
 ?>
+        show_winner_list(1);
         its_month5.popup.open("#popup-winner");
 <?
     }
