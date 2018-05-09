@@ -691,3 +691,72 @@ function event1(depth){
 	});
 	return false;
 }
+
+function show_winner_list(idx, wordObj) {
+	var targetArray = "";
+	var searchArray = [];
+//	var searchIdx = $("#popup-winner .is-active").data('idx');
+	var innerHtml = "";
+	var word = $(wordObj).siblings().val();
+	if(word && word.length<4 || word == "") {
+		alert("휴대전화 마지막 네 자리로 검색해주세요.");
+		$(wordObj).siblings().val("").focus();
+		show_winner_list(1);
+		return;
+	}
+//	인덱스(탭 일때)
+	if(idx > 0) {
+		$("#popup-winner .tab").removeClass('is-active');
+		$("#popup-winner .tab:nth-child("+idx+")").addClass('is-active');
+	}
+	
+	switch(idx) {
+		case 1: 
+			targetArray = winnerArray_1st;
+			break;
+		case 2:
+			targetArray = winnerArray_2nd;
+			break;
+		default:
+//			targetArray = winnerArray_1st;
+			for(i=0; i<winnerArray_1st.length; i++) {
+				if(winnerArray_1st[i].indexOf(word) != -1) {
+					searchArray.push(winnerArray_1st[i]);
+				}
+			}
+			if(searchArray.length>0) {
+				$("#popup-winner .tab").removeClass('is-active');
+				$("#popup-winner .tab:nth-child(1)").addClass('is-active');
+			}else{
+				for(i=0; i<winnerArray_2nd.length; i++) {
+					if(winnerArray_2nd[i].indexOf(word) != -1) {
+						searchArray.push(winnerArray_2nd[i]);
+					}
+				}
+				if(searchArray.length>0) {
+					$("#popup-winner .tab").removeClass('is-active');
+					$("#popup-winner .tab:nth-child(2)").addClass('is-active');
+				}
+			}
+//			if(searchArray.length<1) {
+//				for(i=0; i<winnerArray_2nd.length; i++) {
+//					if(winnerArray_2nd[i].indexOf(word) != -1) {
+//						searchArray.push(targetArray[i]);
+//					}
+//				}
+//				$("#popup-winner .tab:nth-child(2)").addClass('is-active');
+//			}
+			targetArray = searchArray;
+			break;
+	}
+	for(i=0; i<targetArray.length; i++) {
+		innerHtml += "<li>"+targetArray[i]+"</li>";
+	}
+	
+	if(innerHtml == "") {
+		innerHtml = "<li style='float:none;width:100%;padding-right:32px;text-align:center;'>당첨된 내역이 없습니다.</li>";
+	}
+	
+	$("#popup-winner .winner-list").html(innerHtml);
+	
+}

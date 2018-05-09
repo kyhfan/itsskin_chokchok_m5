@@ -784,7 +784,7 @@ html.popup-opened {
 }
 .popup.winner .input-wrap {
 	width: 201px;
-	margin: 8px auto 14px;
+	margin: 8px auto 20px;
 	font-size: 0;
 }
 .popup.winner .input-wrap input[type="tel"] {
@@ -802,6 +802,22 @@ html.popup-opened {
 	color: #ffffff;
 	vertical-align: top;
 }
+.popup.winner .tab-area {
+	width: 280px;
+	margin: 0 auto;
+	font-size: 0;
+}
+.popup.winner .tab-area .tab {
+	width: 50%;
+	height: 26px;
+	background: rgba(238, 50, 79, 0.4);
+	color: #ffffff;
+	font-size: 10px;
+	font-weight: 500;
+}
+.popup.winner .tab-area .tab.is-active {
+	background: rgba(238, 50, 79, 1);
+}
 .popup.winner .list-wrap {
 	width: 280px;
 	height: 195px;
@@ -812,19 +828,22 @@ html.popup-opened {
 	overflow: hidden;
 }
 .popup.winner .list-wrap > .inner {
-	padding: 0 28px;
+	padding: 0 0 0 32px;
 	height: 100%;
 	overflow: auto;
-}
-.popup.winner .list-wrap .winner-list {
-	font-size: 0;
-	color: #3d3935;
 	text-align: left;
 }
+.popup.winner .list-wrap .winner-list {
+/*	display: inline-block;*/
+/*	font-size: 0;*/
+	color: #3d3935;
+	overflow: hidden;
+}
 .popup.winner .list-wrap .winner-list li {
-	display: inline-block;
+	float: left;
 	margin: 0 13px 10px 0;
 	font-size: 12px;
+	min-width: 60px;
 }
 .popup.winner .list-wrap .winner-list li:nth-child(3n) {
 	margin-right: 0;
@@ -834,12 +853,15 @@ html.popup-opened {
 	margin: 0 auto;
 	border-top: 1px solid #d9d9d9;
 	padding: 12px 0 0;
-	text-align: left;
+/*	text-align: left;*/
+	text-align: center;
 }
 .popup .block-msg dl {
 	font-size: 10px;
 	color: #3d3935;
 	padding-left: 4px;
+	display: inline-block;
+	text-align: left;
 }
 .popup .block-msg dl dt {
 	position: relative;

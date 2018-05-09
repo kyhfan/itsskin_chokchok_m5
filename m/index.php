@@ -40,6 +40,7 @@
     <script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
     <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
     <script src="../js/m_main.js"></script>
+    <script src="../js/winner_list.js"></script>
     <script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
@@ -109,6 +110,7 @@
             <div class="text">
                 <img src="./images/section_main_text.png" alt="">
             </div>
+<!--
             <div class="down-nav">
                 <div class="textB">
                     <img src="./images/section_main_nav_text.png" alt="촉촉촉촉촉촉촉! 영상 보고 하이드라 루틴세럼 선물받자!">
@@ -122,11 +124,18 @@
                     </button>
                 </div>
             </div>
-            <!-- <div class="btn-april">
-                <a href="#"  data-popup-target="#popup-winner">
+-->
+            <div class="btn-april">
+                <a href="#" data-popup-target="#popup-winner" onclick="show_winner_list(1)">
                     <img src="./images/main_btn_april.png" alt="4월 혜리 영상 공유 이벤트 당첨자 확인">
                 </a>
-            </div> -->
+            </div> 
+            <div class="down-nav">
+            	<img src="./images/main_down_txt.png" alt="">
+            	<button type="button">
+            		<img src="./images/main_down_arrow.png" alt="">
+            	</button>
+            </div>
         </section>
         <section class="event-fill" id="goFill">
             <div class="text">
@@ -372,6 +381,7 @@ include_once "./popup.html";
     //     console.log($(this).val().charAt());
     //     console.log($(this).val().length);
     // });
+	
 
 
 
