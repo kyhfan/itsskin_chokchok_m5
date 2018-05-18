@@ -105,6 +105,23 @@
             </div>
         </div>
         <div class="content main">
+			<? if($_REQUEST["ref"] === "home")
+{
+			?>
+			<div class="cookie-checker">
+				<div class="wrap">
+					<input type="checkbox" id="cookie-check">
+					<label for="cookie-check">
+						오늘 하루 보지 않기
+					</label>
+					<button type="button" onclick="closeToday()">
+						닫기
+					</button>
+				</div>
+			</div>
+			<?
+}
+			?>
             <div class="section1-wrap" id="goMain">
                 <div class="section-inner">
                     <!-- <div class="big-serum parallax" data-depth="0.3"></div> -->
@@ -340,6 +357,58 @@
 <?
 	include_once "./popup.html";
 ?>
+	<script language="JavaScript">
+		// function fnTrackMouse()
+		// {
+		// 	var innerText="Coords: (" + event.clientX + ",  
+		//   " + event.clientY + ")"; 
+		//   console.log(innerText);
+		// }
+		//<!--
+
+		// 쿠키 생성
+
+		function setCookie(cName, cValue, cDay){
+			var expire = new Date();
+			expire.setDate(expire.getDate() + cDay);
+			cookies = cName + '=' + escape(cValue) + '; path=/ ; domain=.itsskin.com ';
+			// 한글 깨짐을 막기위해 escape(cValue)를 합니다.
+			if(typeof cDay != 'undefined') cookies += ';expires=' + expire.toGMTString() + ';';
+
+			document.cookie = cookies;
+		}
+
+
+		// 쿠키 가져오기
+		function getCookie(cName) {
+			cName = cName + '=';
+			var cookieData = document.cookie;
+			var start = cookieData.indexOf(cName);
+			var cValue = '';
+			if(start != -1){
+				start += cName.length;
+				var end = cookieData.indexOf(';', start);
+				if(end == -1)end = cookieData.length;
+				cValue = cookieData.substring(start, end);
+			}
+			return unescape(cValue);
+		}
+
+		var gc = getCookie('stopmoist7');
+
+		//오늘하루 보지않기 닫기
+		function closeToday(){
+
+			var chk_v =  $("#cookie-check").is(":checked");
+
+			if(chk_v){
+				setCookie('stopmoist7','Y','1');
+			}
+
+			$('.cookie-checker').hide();
+		}
+		//-->
+	</script>
     <script>
 
     var currentSection = "goMain";

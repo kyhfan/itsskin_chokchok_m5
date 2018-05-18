@@ -59,6 +59,55 @@
 .content.main {
 	height: 100%;
 }
+.cookie-checker {
+	position: fixed;
+	right: 13.6%;
+	z-index: 100;
+	bottom: 20px;
+}
+.cookie-checker .wrap {
+	position: relative;
+	font-size: 0;
+}
+.cookie-checker #cookie-check {
+	position: absolute;
+	visibility: hidden;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+}
+.cookie-checker #cookie-check + label {
+	display: inline-block;
+	color: #341d21;
+	padding: 0 20px 0 42px;
+	font-size: 17px;
+	font-weight: 400;
+	cursor: pointer;
+	vertical-align: middle;
+}
+.cookie-checker #cookie-check + label:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0px;
+	width: 30px;
+	height: 24px;
+	display: inline-block;
+	background: url(../images/cookie_check_off.png) center no-repeat;
+	background-size: 30px 24px;
+	vertical-align: middle;
+}
+.cookie-checker #cookie-check:checked + label:before {
+	background: url(../images/cookie_check.png) center no-repeat;
+	background-size: 30px 24px;
+}
+.cookie-checker button {
+	background: #d5304a;
+	color: #ffffff;
+	font-size: 15px;
+	padding: 2px 15px;
+	vertical-align: middle;
+}
 .section1-wrap {
 	/* background: url(../images/section1_bg.png) no-repeat center; */
 	background: url(../images/section1_bg.jpg) no-repeat center;

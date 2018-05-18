@@ -23,7 +23,65 @@
 	left: 50%;
 	margin-left: -34.5%;
 }
-
+.cookie-checker {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	/*	right: 205px;*/
+	z-index: 100;
+	background: rgba(255, 255, 255, 0.9);
+	text-align: center;
+/*
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+*/
+}
+.cookie-checker .wrap {
+	position: relative;
+	padding: 11px 0;
+	font-size: 0;
+	display: inline-block;
+}
+.cookie-checker #cookie-check {
+	position: absolute;
+	visibility: hidden;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+}
+.cookie-checker #cookie-check + label {
+	display: inline-block;
+	color: #341d21;
+	padding: 0 10px 0 21px;
+	font-size: 12px;
+	font-weight: 400;
+	cursor: pointer;
+	vertical-align: bottom;
+}
+.cookie-checker #cookie-check + label:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 15px;
+	width: 15px;
+	height: 12px;
+	display: inline-block;
+	background: url(../images/cookie_check_off.png) center no-repeat;
+	background-size: 15px 12px;
+	vertical-align: middle;
+}
+.cookie-checker #cookie-check:checked + label:before {
+	background: url(../images/cookie_check.png) center no-repeat;
+	background-size: 15px 12px;
+}
+.cookie-checker button {
+	background: #d5304a;
+	color: #ffffff;
+	font-size: 11px;
+	padding: 2px 7px;
+	vertical-align: middle;
+}
 .main-visual .text {
 	position: relative;
 	/*	position: absolute;*/

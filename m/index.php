@@ -100,6 +100,23 @@
     </div>
     <div class="content main">
         <!--<a href="javascript:void(0)" data-popup-target="#popup-share"></a>-->
+		<? if($_REQUEST["ref"] === "home")
+{
+		?>
+		<div class="cookie-checker">
+			<div class="wrap">
+				<input type="checkbox" id="cookie-check">
+				<label for="cookie-check">
+					오늘 하루 보지 않기
+				</label>
+				<button type="button" onclick="closeToday()">
+					닫기
+				</button>
+			</div>
+		</div>
+		<?
+}
+		?>
         <section class="main-visual" id="goMain">
             <div class="serum">
                 <img src="./images/section_main_serum.png" alt="">
@@ -316,7 +333,48 @@ include_once "./popup.html";
 	<div id="layer" style="display:none;position:fixed;overflow:hidden;z-index:9999;-webkit-overflow-scrolling:touch;">
 		<img src="//i1.daumcdn.net/localimg/localimages/07/postcode/320/close.png" id="btnCloseLayer" style="width:7%;cursor:pointer;position:absolute;right:-3px;top:-3px;z-index:1" onclick="closeDaumPostcode()" alt="닫기 버튼">
 	</div>
+<script type="text/javascript">
+	// 쿠키 생성
+	function setCookie2(cName, cValue, cDay){
+		var expire = new Date();
+		expire.setDate(expire.getDate() + cDay);
+		cookies = cName + '=' + escape(cValue) + '; path=/ ; domain=.itsskin.com '; // 한글 깨짐을 막기위해 escape(cValue)를 합니다.
+		if(typeof cDay != 'undefined') cookies += ';expires=' + expire.toGMTString() + ';';
+		document.cookie = cookies;
+	}
 
+	// 쿠키 가져오기
+	function getCookie2(cName) {
+		cName = cName + '=';
+		var cookieData = document.cookie;
+		var start = cookieData.indexOf(cName);
+		var cValue = '';
+		if(start != -1){
+			start += cName.length;
+			var end = cookieData.indexOf(';', start);
+			if(end == -1)end = cookieData.length;
+			cValue = cookieData.substring(start, end);
+		}
+		return unescape(cValue);
+	}
+
+
+	var gc = getCookie2('stopmoist7');
+
+
+	//오늘하루 보지않기 닫기
+	function closeToday(){
+
+		var chk_v =  $("#cookie-check").is(":checked");
+
+		if(chk_v){
+			setCookie2('stopmoist7','Y','1');
+		}
+
+		$('.cookie-checker').hide();
+		window.close();
+	}
+</script>
 <script>
     $("document").ready(function(){
 <?
