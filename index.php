@@ -93,9 +93,9 @@
                 <ul>
                     <li class="is-active"><a href="index.php?pTarget=goMain" data-slide="goMain" onclick="event1(58)">It's My 세럼</a></li>
                     <li><a href="index.php?pTarget=goFill" data-slide="goFill" onclick="event1(60)">빈칸 이벤트</a></li>
-                    <!-- <li>QUIZ SHOW</li> -->
+                    <li><a href="./month_4/event.php" onclick="event1(60)">혜리 영상 이벤트</a></li>
                     <li><a href="index.php?pTarget=goRoutin" data-slide="goRoutin" onclick="event1(59)">나만의 루틴 확인</a></li>
-                    <li><a href="./month_4/event.php" target="_blank" onclick="event1(61)">지난 이벤트</a></li>
+                    <li><a href="http://routine.itsskin.com" onclick="event1(61)">진행중인 이벤트<img src="./images/new_ico.png" alt="" style="vertical-align: -4px; margin-left: 5px;"></a></li>
                 </ul>
             </div>
             <div class="share-group">
@@ -207,15 +207,8 @@
                     <div class="quiz-content">
                         <div class="input-group" id="sub-input-wrap">
                             <input type="text" class="blank1" maxlength="1" onkeyup="chk_strlen(this,2,2)">
-                            <!-- <input type="text" class="blank2" maxlength="1" onkeyup="chk_strlen(this,2,3)">
-                            <input type="text" class="blank3" maxlength="1" onkeyup="chk_strlen(this,2,4)">
-                            <input type="text" class="blank4" maxlength="1" onkeyup="chk_strlen(this,2,5)">
-                            <input type="text" class="blank5" maxlength="1" onkeyup="chk_strlen(this,2,6)">
-                            <input type="text" class="blank6" maxlength="1" onkeyup="chk_strlen(this,2,7)">
-                            <input type="text" class="blank7" maxlength="1" onkeyup="chk_strlen(this,2,0)"> -->
                         </div>
                     </div>
-                    <!-- <button class="quiz-btn" data-popup-target="#popup-input"></button> -->
                     <button type="button" class="quiz-btn" id="sub-submit" onclick="event1(67)"></button>
                 </div>
                 <div class="tab-button-area">
@@ -406,6 +399,7 @@
 			}
 
 			$('.cookie-checker').hide();
+            window.close();
 		}
 		//-->
 	</script>
@@ -413,19 +407,6 @@
 
     var currentSection = "goMain";
     $("document").ready(function(){
-        // console.log("ready");
-        // var yt_width = $(".player-area").width() - 20;
-        // var yt_height = (yt_width / 16) * 9;
-        // $("#ytplayer").width(yt_width);
-        // $("#ytplayer").height(yt_height);
-        // var ua = window.navigator.userAgent;
-
-        // if(ua.indexOf("Windows")>-1) {
-        //     $('.quiz-content input[type="text"]').css({
-        //        'margin-right': '25'+'px',
-        //         'margin-top': '34'+'px'
-        //     });
-        // }
 
         winner_list('hydra','tab');
 

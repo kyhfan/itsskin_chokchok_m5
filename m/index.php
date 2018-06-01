@@ -78,9 +78,9 @@
             <ul class="list">
                 <li class="is-active"><a href="index.php?pTarget=goMain" data-slide="goMain" onclick="event1('59');">It's My 세럼</a></li>
                 <li class="sectionMove"><a href="index.php?pTarget=goFill" data-slide="goFill" onclick="event1('61');">빈칸 이벤트</a></li>
-                <!-- <li><a href="#" onclick="alert('준비중입니다')">QUIZ SHOW</a></li> -->
+                <li><a href="../month_4/m/event.php">혜리 영상 이벤트</a></li>
                 <li class="sectionMove"><a href="index.php?pTarget=goRoutin" data-slide="goRoutin" onclick="event1('60');">나만의 루틴 확인</a></li>
-                <li><a href="../month_4/m/event.php" target="_blank" onclick="event1('62');">지난 이벤트</a></li>
+                <li><a href="http://routine.itsskin.com" onclick="event1('62');">진행중인 이벤트<img src="./images/new_ico.png" alt="" style="width: 29px; vertical-align: 0px; margin-left: 5px;"></a></li>
             </ul>
             <div class="share-list">
                 <a href="javascript:void(0)" data-share-target="fb" onclick="event1('63');">
@@ -99,7 +99,6 @@
         </div>
     </div>
     <div class="content main">
-        <!--<a href="javascript:void(0)" data-popup-target="#popup-share"></a>-->
 		<? if($_REQUEST["ref"] === "home")
 {
 		?>
@@ -127,21 +126,6 @@
             <div class="text">
                 <img src="./images/section_main_text.png" alt="">
             </div>
-<!--
-            <div class="down-nav">
-                <div class="textB">
-                    <img src="./images/section_main_nav_text.png" alt="촉촉촉촉촉촉촉! 영상 보고 하이드라 루틴세럼 선물받자!">
-                    <button type="button" onclick="event1('70');">
-                        GO!
-                    </button>
-                </div>
-                <div class="capture">
-                    <button type="button">
-                        <img src="./images/section_main_nav_capture.png">
-                    </button>
-                </div>
-            </div>
--->
             <div class="btn-april">
                 <a href="#" data-popup-target="#popup-winner" onclick="show_winner_list(1)">
                     <img src="./images/main_btn_april.png" alt="4월 혜리 영상 공유 이벤트 당첨자 확인">
@@ -420,30 +404,23 @@ include_once "./popup.html";
     });
 
     $(document).on('click', '#sub-submit', function() {
-        var i = 0;
-       $('#sub-input-wrap input').each(function() {
-           if("7" != $(this).val()) {
-               // alert("오답입니다 영상을 다시 확인 후 입력해주세요!");
-               its_month5.popup.open("#popup-retry");
-               i = 0;
-               $(this).val("");
-               return false;
-           }else{
-               i++;
-           }
-       });
-       if(i==1) {
-           its_month5.popup.open("#sub-ev-input");
-       }
+        alert("이벤트가 종료되었습니다");
+    //     var i = 0;
+    //    $('#sub-input-wrap input').each(function() {
+    //        if("7" != $(this).val()) {
+    //            // alert("오답입니다 영상을 다시 확인 후 입력해주세요!");
+    //            its_month5.popup.open("#popup-retry");
+    //            i = 0;
+    //            $(this).val("");
+    //            return false;
+    //        }else{
+    //            i++;
+    //        }
+    //    });
+    //    if(i==1) {
+    //        its_month5.popup.open("#sub-ev-input");
+    //    }
     });
-    // $("#sub-input-wrap input").keyup(function(e) {
-    //     console.log($(this).val().charAt());
-    //     console.log($(this).val().length);
-    // });
-	
-
-
-
 </script>
 </body>
 </html>

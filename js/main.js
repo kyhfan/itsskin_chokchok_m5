@@ -279,16 +279,17 @@ $(function(){
 	}
 
 	$(document).on('click', '#sub-submit', function() {
-		var quizAnswer = $(".blank1").val();
-		if (quizAnswer == "7")
-		{
-			popup.open("#popup-input");
-		}else{
-			// alert("오답입니다 영상을 다시 확인 후 입력해주세요!");
-			popup.open("#popup-wrong");
-			$(".blank1").val("");
-			// return false;
-		}
+		alert("이벤트가 종료 되었습니다.");
+		// var quizAnswer = $(".blank1").val();
+		// if (quizAnswer == "7")
+		// {
+		// 	popup.open("#popup-input");
+		// }else{
+		// 	// alert("오답입니다 영상을 다시 확인 후 입력해주세요!");
+		// 	popup.open("#popup-wrong");
+		// 	$(".blank1").val("");
+		// 	// return false;
+		// }
     });
 
 	$(".input-submit-btn").on("click", function(){

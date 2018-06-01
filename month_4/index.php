@@ -57,11 +57,11 @@ include_once "./head.php";
             </div>
             <div class="navi-menu">
                 <ul>
-                    <li class="is-active"><a href="index.php?pTarget=goMain" class="sectionMove" data-slide="goMain" onclick="event1(3)">It's My 세럼</a></li>
-                    <li><a href="index.php?pTarget=goRoutin" class="go_routine sectionMove" data-slide="goRoutin" onclick="event1(4)">내게 맞는 루틴 찾기</a></li>
-                    <!-- <li>QUIZ SHOW</li> -->
-                    <li><a href="event.php">촉촉 영상 공유 이벤트</a></li>
-                    <li><a href="../index.php">진행중인 이벤트<img src="./images/new_ico.png" alt="" style="vertical-align: -4px; margin-left: 5px;"></a></li>
+					<li class="is-active"><a href="index.php?pTarget=goMain" onclick="event1(3)">It's My 세럼</a></li>
+					<li><a href="index.php?pTarget=goRoutin" class="go_routine" onclick="event1(4)">내게 맞는 루틴 찾기</a></li>
+					<li><a href="../index.php">빈칸 이벤트</a></li>
+					<li><a href="event.php">촉촉 영상 공유 이벤트</a></li>
+					<li><a href="http://routine.itsskin.com">진행중인 이벤트<img src="./images/new_ico.png" alt="" style="vertical-align: -4px; margin-left: 5px;"></a></li>
                 </ul>
             </div>
         </div>
